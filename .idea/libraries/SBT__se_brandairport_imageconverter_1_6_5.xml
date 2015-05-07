@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: se.brandairport:imageconverter:1.6.5">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/se/brandairport/imageconverter/1.6.5/imageconverter-1.6.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

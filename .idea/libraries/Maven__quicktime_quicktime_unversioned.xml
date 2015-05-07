@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: quicktime:quicktime:unversioned">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/quicktime/quicktime/unversioned/quicktime-unversioned.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/quicktime/quicktime/unversioned/quicktime-unversioned-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/quicktime/quicktime/unversioned/quicktime-unversioned-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

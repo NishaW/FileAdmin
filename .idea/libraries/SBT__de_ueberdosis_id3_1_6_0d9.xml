@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: de.ueberdosis:id3:1.6.0d9">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/de/ueberdosis/id3/1.6.0d9/id3-1.6.0d9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

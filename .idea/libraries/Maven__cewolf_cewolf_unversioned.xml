@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: cewolf:cewolf:unversioned">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cewolf/cewolf/unversioned/cewolf-unversioned.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/cewolf/cewolf/unversioned/cewolf-unversioned-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/cewolf/cewolf/unversioned/cewolf-unversioned-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: se.c2:core_web:1.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/se/c2/core_web/1.1-SNAPSHOT/core_web-1.1-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

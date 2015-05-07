@@ -1,0 +1,35 @@
+@(customers: List[Customer])
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+    <table border=0 width=40% height=30% align=left cellpadding=1 cellspacing=1>
+        <thead>
+            <tr>
+                <th align="left">Customer Name</th>
+
+            </tr>
+        </thead>
+        <tbody>
+        @for(customers <- customers) {
+
+            <tr>
+
+                <td>@customers.name</td>
+                <td>@customers.language</td>
+                <td>@customers.path</td>
+
+
+
+            </tr>
+        }
+
+        </tbody>
+    </table>
+
+</body>
+</html>

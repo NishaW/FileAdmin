@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: se.c2:photoshop:unversioned">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/se/c2/photoshop/unversioned/photoshop-unversioned.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/se/c2/photoshop/unversioned/photoshop-unversioned-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/se/c2/photoshop/unversioned/photoshop-unversioned-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: se.c2:chart:unversioned">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/se/c2/chart/unversioned/chart-unversioned.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/se/c2/chart/unversioned/chart-unversioned-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/se/c2/chart/unversioned/chart-unversioned-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

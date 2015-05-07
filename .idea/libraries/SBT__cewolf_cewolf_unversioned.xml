@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: cewolf:cewolf:unversioned">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/cewolf/cewolf/unversioned/cewolf-unversioned.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

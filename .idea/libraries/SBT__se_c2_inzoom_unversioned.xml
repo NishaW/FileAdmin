@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: se.c2:inzoom:unversioned">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/se/c2/inzoom/unversioned/inzoom-unversioned.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

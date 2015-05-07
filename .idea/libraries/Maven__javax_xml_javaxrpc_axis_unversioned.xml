@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: javax.xml.javaxrpc:axis:unversioned">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/xml/javaxrpc/axis/unversioned/axis-unversioned.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/xml/javaxrpc/axis/unversioned/axis-unversioned-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/javax/xml/javaxrpc/axis/unversioned/axis-unversioned-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
