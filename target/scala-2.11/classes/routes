@@ -1,0 +1,20 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET         /                    controllers.UserApplication.index()
+POST        /home/               controllers.CustomerApplication.home()
+GET         /home/               controllers.CustomerApplication.home()
+GET         /home/iframe         controllers.CustomerApplication.getIframe()
+GET         /home/getcust        controllers.CustomerApplication.getcust()
+GET         /home/test           controllers.UserApplication.test()
+GET         /home/asset          controllers.FileApplication.getassetlist()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET         /assets/*file        controllers.Assets.at(path="/public", file)
+
+
+
+    

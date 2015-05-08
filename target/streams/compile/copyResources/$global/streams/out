@@ -1,0 +1,6 @@
+[debug] Copy resource mappings: 
+[debug] 	(C:\Users\Nisha\Documents\GitHub\FileAdministration\FileAdmin\conf\application.conf,C:\Users\Nisha\Documents\GitHub\FileAdministration\FileAdmin\target\scala-2.11\classes\application.conf)
+[debug] 	(C:\Users\Nisha\Documents\GitHub\FileAdministration\FileAdmin\conf\evolutions,C:\Users\Nisha\Documents\GitHub\FileAdministration\FileAdmin\target\scala-2.11\classes\evolutions)
+[debug] 	(C:\Users\Nisha\Documents\GitHub\FileAdministration\FileAdmin\conf\routes,C:\Users\Nisha\Documents\GitHub\FileAdministration\FileAdmin\target\scala-2.11\classes\routes)
+[debug] 	(C:\Users\Nisha\Documents\GitHub\FileAdministration\FileAdmin\conf\evolutions\default,C:\Users\Nisha\Documents\GitHub\FileAdministration\FileAdmin\target\scala-2.11\classes\evolutions\default)
+[debug] 	(C:\Users\Nisha\Documents\GitHub\FileAdministration\FileAdmin\conf\evolutions\default\1.sql,C:\Users\Nisha\Documents\GitHub\FileAdministration\FileAdmin\target\scala-2.11\classes\evolutions\default\1.sql)
