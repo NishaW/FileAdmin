@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for fileadmin#fileadmin_2.11;1.0 [compile]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->org.scala-lang#scala-library;2.11.1 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@40cc20cf
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@62e26a4a
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1
 [debug] 	local: revision in cache: org.scala-lang#scala-library;2.11.1
 [debug] 	found org.scala-lang#scala-library;2.11.1 in sbt-chain
@@ -1042,27 +1042,11 @@
 [debug] 		tried C:\Users\Nisha\.ivy2\local\se.c2\core_web\1.5-SNAPSHOT\ivys\ivy.xml
 [debug] 	local: no ivy file found for se.c2#core_web;1.5-SNAPSHOT
 [debug] don't use cache for se.c2#core_web;1.5-SNAPSHOT: changing=true
-[debug] 		tried file:/doesnotexist/repository/se.c2/core_web/1.5-SNAPSHOT/ivys/ivy.xml
-[debug] 	activator-launcher-local: no ivy file found for se.c2#core_web;1.5-SNAPSHOT
-[debug] don't use cache for se.c2#core_web;1.5-SNAPSHOT: changing=true
-[debug] 		tried file:/C:/Users/Nisha/Documents/activator-1.3.2/repository/se.c2/core_web/1.5-SNAPSHOT/ivys/ivy.xml
-[debug] 	activator-local: no ivy file found for se.c2#core_web;1.5-SNAPSHOT
-[debug] don't use cache for se.c2#core_web;1.5-SNAPSHOT: changing=true
 [debug] CLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/se/c2/core_web/1.5-SNAPSHOT/maven-metadata.xml
 [debug] 	maven-metadata not available: http://repo1.maven.org/maven2/se/c2/core_web/1.5-SNAPSHOT/maven-metadata.xml
 [debug] 		tried http://repo1.maven.org/maven2/se/c2/core_web/1.5-SNAPSHOT/core_web-1.5-SNAPSHOT.pom
 [debug] CLIENT ERROR: Not Found url=http://repo1.maven.org/maven2/se/c2/core_web/1.5-SNAPSHOT/core_web-1.5-SNAPSHOT.pom
 [debug] 	public: no ivy file found for se.c2#core_web;1.5-SNAPSHOT
-[debug] don't use cache for se.c2#core_web;1.5-SNAPSHOT: changing=true
-[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/se/c2/core_web/1.5-SNAPSHOT/maven-metadata.xml
-[debug] 	maven-metadata not available: http://repo.typesafe.com/typesafe/releases/se/c2/core_web/1.5-SNAPSHOT/maven-metadata.xml
-[debug] 		tried http://repo.typesafe.com/typesafe/releases/se/c2/core_web/1.5-SNAPSHOT/core_web-1.5-SNAPSHOT.pom
-[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/se/c2/core_web/1.5-SNAPSHOT/core_web-1.5-SNAPSHOT.pom
-[debug] 	typesafe-releases: no ivy file found for se.c2#core_web;1.5-SNAPSHOT
-[debug] don't use cache for se.c2#core_web;1.5-SNAPSHOT: changing=true
-[debug] 		tried http://repo.typesafe.com/typesafe/ivy-releases/se.c2/core_web/1.5-SNAPSHOT/ivys/ivy.xml
-[debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/ivy-releases/se.c2/core_web/1.5-SNAPSHOT/ivys/ivy.xml
-[debug] 	typesafe-ivy-releasez: no ivy file found for se.c2#core_web;1.5-SNAPSHOT
 [debug] don't use cache for se.c2#core_web;1.5-SNAPSHOT: changing=true
 [debug] CLIENT ERROR: Not Found url=http://repo.typesafe.com/typesafe/releases/se/c2/core_web/1.5-SNAPSHOT/maven-metadata.xml
 [debug] 	maven-metadata not available: http://repo.typesafe.com/typesafe/releases/se/c2/core_web/1.5-SNAPSHOT/maven-metadata.xml
@@ -2184,10 +2168,6 @@
 [debug] sbt-chain: Checking cache for: dependency: org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] 		tried C:\Users\Nisha\.ivy2\local\org.apache.geronimo.specs\geronimo-jms_1.1_spec\1.1.1\ivys\ivy.xml
 [debug] 	local: no ivy file found for org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1
-[debug] 		tried file:/doesnotexist/repository/org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1/ivys/ivy.xml
-[debug] 	activator-launcher-local: no ivy file found for org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1
-[debug] 		tried file:/C:/Users/Nisha/Documents/activator-1.3.2/repository/org.apache.geronimo.specs/geronimo-jms_1.1_spec/1.1.1/ivys/ivy.xml
-[debug] 	activator-local: no ivy file found for org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.pom
 [debug] 	public: found md file for org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1
 [debug] 		=> http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.pom (1.1.1)
@@ -2195,7 +2175,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.pom
-[debug] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1!geronimo-jms_1.1_spec.pom(pom.original) (380ms)
+[debug] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-jms_1.1_spec;1.1.1!geronimo-jms_1.1_spec.pom(pom.original) (389ms)
 [info] Resolving org.apache.geronimo.specs#specs;1.4 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.geronimo.specs#specs;1.4 {}
 [debug] sbt-chain: module revision found in cache: org.apache.geronimo.specs#specs;1.4
@@ -2413,10 +2393,6 @@
 [debug] sbt-chain: Checking cache for: dependency: com.google.inject.extensions#guice-servlet;3.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] 		tried C:\Users\Nisha\.ivy2\local\com.google.inject.extensions\guice-servlet\3.0\ivys\ivy.xml
 [debug] 	local: no ivy file found for com.google.inject.extensions#guice-servlet;3.0
-[debug] 		tried file:/doesnotexist/repository/com.google.inject.extensions/guice-servlet/3.0/ivys/ivy.xml
-[debug] 	activator-launcher-local: no ivy file found for com.google.inject.extensions#guice-servlet;3.0
-[debug] 		tried file:/C:/Users/Nisha/Documents/activator-1.3.2/repository/com.google.inject.extensions/guice-servlet/3.0/ivys/ivy.xml
-[debug] 	activator-local: no ivy file found for com.google.inject.extensions#guice-servlet;3.0
 [debug] 		tried http://repo1.maven.org/maven2/com/google/inject/extensions/guice-servlet/3.0/guice-servlet-3.0.pom
 [debug] 	public: found md file for com.google.inject.extensions#guice-servlet;3.0
 [debug] 		=> http://repo1.maven.org/maven2/com/google/inject/extensions/guice-servlet/3.0/guice-servlet-3.0.pom (3.0)
@@ -2424,7 +2400,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/com/google/inject/extensions/guice-servlet/3.0/guice-servlet-3.0.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/com/google/inject/extensions/guice-servlet/3.0/guice-servlet-3.0.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/com/google/inject/extensions/guice-servlet/3.0/guice-servlet-3.0.pom
-[debug] 	[SUCCESSFUL ] com.google.inject.extensions#guice-servlet;3.0!guice-servlet.pom(pom.original) (356ms)
+[debug] 	[SUCCESSFUL ] com.google.inject.extensions#guice-servlet;3.0!guice-servlet.pom(pom.original) (449ms)
 [info] Resolving com.google.inject.extensions#extensions-parent;3.0 ...
 [debug] sbt-chain: Checking cache for: dependency: com.google.inject.extensions#extensions-parent;3.0 {}
 [debug] sbt-chain: module revision found in cache: com.google.inject.extensions#extensions-parent;3.0
@@ -2731,10 +2707,6 @@
 [debug] sbt-chain: Checking cache for: dependency: org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
 [debug] 		tried C:\Users\Nisha\.ivy2\local\org.apache.geronimo.specs\geronimo-j2ee-management_1.1_spec\1.0.1\ivys\ivy.xml
 [debug] 	local: no ivy file found for org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1
-[debug] 		tried file:/doesnotexist/repository/org.apache.geronimo.specs/geronimo-j2ee-management_1.1_spec/1.0.1/ivys/ivy.xml
-[debug] 	activator-launcher-local: no ivy file found for org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1
-[debug] 		tried file:/C:/Users/Nisha/Documents/activator-1.3.2/repository/org.apache.geronimo.specs/geronimo-j2ee-management_1.1_spec/1.0.1/ivys/ivy.xml
-[debug] 	activator-local: no ivy file found for org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1
 [debug] 		tried http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.pom
 [debug] 	public: found md file for org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1
 [debug] 		=> http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.pom (1.0.1)
@@ -2742,7 +2714,7 @@
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.pom
 [debug] 	public: downloading http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.pom.sha1
 [debug] sha1 OK for http://repo1.maven.org/maven2/org/apache/geronimo/specs/geronimo-j2ee-management_1.1_spec/1.0.1/geronimo-j2ee-management_1.1_spec-1.0.1.pom
-[debug] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1!geronimo-j2ee-management_1.1_spec.pom(pom.original) (363ms)
+[debug] 	[SUCCESSFUL ] org.apache.geronimo.specs#geronimo-j2ee-management_1.1_spec;1.0.1!geronimo-j2ee-management_1.1_spec.pom(pom.original) (429ms)
 [info] Resolving org.apache.geronimo.specs#specs;1.4 ...
 [debug] sbt-chain: Checking cache for: dependency: org.apache.geronimo.specs#specs;1.4 {}
 [debug] sbt-chain: module revision found in cache: org.apache.geronimo.specs#specs;1.4
@@ -2773,6 +2745,17 @@
 [debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->org.javassist#javassist;3.19.0-GA [compile->compile]
 [debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->javax.inject#javax.inject;1 [compile->master(*)]
 [debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->javax.inject#javax.inject;1 [compile->compile(*)]
+[debug] == resolving dependencies se.c2#core;3.2->com.zaxxer#HikariCP-java6;2.3.5 [compile->default(compile)]
+[debug] == resolving dependencies se.c2#core;3.2->com.zaxxer#HikariCP-java6;2.3.5 [compile->runtime]
+[debug] == resolving dependencies se.c2#core;3.2->com.zaxxer#HikariCP-java6;2.3.5 [compile->compile]
+[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->org.slf4j#slf4j-api;1.7.10 [runtime->runtime(*)]
+[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->org.slf4j#slf4j-api;1.7.12 [runtime->runtime(*)]
+[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->org.slf4j#slf4j-api;1.7.12 [runtime->compile]
+[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)]
+[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->org.javassist#javassist;3.19.0-GA [runtime->compile]
+[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->javax.inject#javax.inject;1 [runtime->runtime(*)]
+[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->javax.inject#javax.inject;1 [runtime->compile]
+[debug] == resolving dependencies se.c2#core;3.2->com.zaxxer#HikariCP-java6;2.3.5 [compile->master]
 [debug] == resolving dependencies se.c2#core;3.2->com.google.code.findbugs#jsr305;3.0.0 [compile->master(*)]
 [info] Resolving com.google.code.findbugs#jsr305;3.0.0 ...
 [debug] sbt-chain: Checking cache for: dependency: com.google.code.findbugs#jsr305;3.0.0 {compile=[compile(*), master(*)], runtime=[runtime(*)]}
@@ -3066,13 +3049,6 @@
 [debug] dependency descriptor has been mediated: dependency: junit#junit;3.8.1 {test=[runtime(*), master(*)]} => dependency: junit#junit;4.10 {test=[runtime(*), master(*)]}
 [debug] == resolving dependencies se.c2#core;3.2->com.zaxxer#HikariCP-java6;2.3.5 [runtime->runtime(*)]
 [debug] == resolving dependencies se.c2#core;3.2->com.zaxxer#HikariCP-java6;2.3.5 [runtime->compile]
-[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->org.slf4j#slf4j-api;1.7.10 [runtime->runtime(*)]
-[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->org.slf4j#slf4j-api;1.7.12 [runtime->runtime(*)]
-[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->org.slf4j#slf4j-api;1.7.12 [runtime->compile]
-[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->org.javassist#javassist;3.19.0-GA [runtime->runtime(*)]
-[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->org.javassist#javassist;3.19.0-GA [runtime->compile]
-[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->javax.inject#javax.inject;1 [runtime->runtime(*)]
-[debug] == resolving dependencies com.zaxxer#HikariCP-java6;2.3.5->javax.inject#javax.inject;1 [runtime->compile]
 [debug] == resolving dependencies se.c2#core;3.2->com.google.code.findbugs#jsr305;3.0.0 [runtime->runtime(*)]
 [debug] == resolving dependencies se.c2#core;3.2->com.google.code.findbugs#jsr305;3.0.0 [runtime->compile]
 [debug] == resolving dependencies se.c2#core;3.2->org.apache.maven#maven-artifact;3.3.1 [runtime->runtime(*)]
@@ -3105,6 +3081,10 @@
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->runtime]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->compile]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->master]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->default(compile)]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->runtime]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->compile]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->master]
 [debug] resolving dependencies for configuration 'runtime'
 [debug] == resolving dependencies for fileadmin#fileadmin_2.11;1.0 [runtime]
 [debug] == resolving dependencies for fileadmin#fileadmin_2.11;1.0 [compile]
@@ -5160,6 +5140,10 @@
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->runtime]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->compile]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->master]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->default(compile)]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->runtime]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->compile]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->master]
 [debug] resolving dependencies for configuration 'test'
 [debug] == resolving dependencies for fileadmin#fileadmin_2.11;1.0 [test]
 [debug] == resolving dependencies for fileadmin#fileadmin_2.11;1.0 [runtime]
@@ -7211,6 +7195,10 @@
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->runtime]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->compile]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->master]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->default(compile)]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->runtime]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->compile]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->master]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.typesafe.play#play-test_2.11;2.3.6 [test->default(compile)]
 [info] Resolving com.typesafe.play#play-test_2.11;2.3.6 ...
 [debug] sbt-chain: Checking cache for: dependency: com.typesafe.play#play-test_2.11;2.3.6 {test=[default(compile)]}
@@ -10618,6 +10606,10 @@
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->runtime]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->compile]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->master]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->default(compile)]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->runtime]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->compile]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->master]
 [debug] == resolving dependencies for fileadmin#fileadmin_2.11;1.0 [optional]
 [debug] == resolving dependencies for fileadmin#fileadmin_2.11;1.0 [provided]
 [debug] resolving dependencies for configuration 'runtime-internal'
@@ -12671,6 +12663,10 @@
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->runtime]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->compile]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->master]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->default(compile)]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->runtime]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->compile]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->master]
 [debug] == resolving dependencies for fileadmin#fileadmin_2.11;1.0 [optional]
 [debug] resolving dependencies for configuration 'test-internal'
 [debug] == resolving dependencies for fileadmin#fileadmin_2.11;1.0 [test-internal]
@@ -14724,6 +14720,10 @@
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->runtime]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->compile]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->javax.mail#mail;1.5.0-b01 [compile->master]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->default(compile)]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->runtime]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->compile]
+[debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.zaxxer#HikariCP-java6;2.3.5 [compile->master]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.typesafe.play#play-test_2.11;2.3.6 [test->default(compile)]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.typesafe.play#play-test_2.11;2.3.6 [test->runtime]
 [debug] == resolving dependencies fileadmin#fileadmin_2.11;1.0->com.typesafe.play#play-test_2.11;2.3.6 [test->compile]
@@ -16250,6 +16250,7 @@
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-cache_2.11;2.3.6!play-cache_2.11.jar
 [debug] 	[NOT REQUIRED] com.typesafe.play#play-java-ws_2.11;2.3.6!play-java-ws_2.11.jar
 [debug] 	[NOT REQUIRED] se.c2#core_web;1.5-SNAPSHOT!core_web.jar
+[debug] 	[NOT REQUIRED] com.zaxxer#HikariCP-java6;2.3.5!HikariCP-java6.jar(bundle)
 [debug] 	[NOT REQUIRED] org.apache.commons#commons-lang3;3.1!commons-lang3.jar
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.1!scala-xml_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] com.typesafe.play#build-link;2.3.6!build-link.jar
@@ -16360,7 +16361,6 @@
 [debug] 	[NOT REQUIRED] com.google.inject#guice;3.0!guice.jar
 [debug] 	[NOT REQUIRED] com.google.inject.extensions#guice-servlet;3.0!guice-servlet.jar
 [debug] 	[NOT REQUIRED] org.apache.activemq#activemq-core;5.7.0!activemq-core.jar(bundle)
-[debug] 	[NOT REQUIRED] com.zaxxer#HikariCP-java6;2.3.5!HikariCP-java6.jar(bundle)
 [debug] 	[NOT REQUIRED] com.google.code.findbugs#jsr305;3.0.0!jsr305.jar
 [debug] 	[NOT REQUIRED] org.apache.maven#maven-artifact;3.3.1!maven-artifact.jar
 [debug] 	[NOT REQUIRED] org.apache.pdfbox#fontbox;1.8.9!fontbox.jar(bundle)
@@ -16477,7 +16477,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.1!scala-compiler.jar
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] jline#jline;2.11!jline.jar
-[debug] :: resolution report :: resolve 10182ms :: artifacts dl 354ms
+[debug] :: resolution report :: resolve 10506ms :: artifacts dl 374ms
 [debug] 	report for fileadmin#fileadmin_2.11;1.0 compile produced in C:\Users\Nisha\Documents\GitHub\FileAdmin\target\resolution-cache\reports\fileadmin-fileadmin_2.11-compile.xml
 [debug] 	report for fileadmin#fileadmin_2.11;1.0 runtime produced in C:\Users\Nisha\Documents\GitHub\FileAdmin\target\resolution-cache\reports\fileadmin-fileadmin_2.11-runtime.xml
 [debug] 	report for fileadmin#fileadmin_2.11;1.0 test produced in C:\Users\Nisha\Documents\GitHub\FileAdmin\target\resolution-cache\reports\fileadmin-fileadmin_2.11-test.xml
@@ -16491,5 +16491,5 @@
 [debug] 	report for fileadmin#fileadmin_2.11;1.0 docs produced in C:\Users\Nisha\Documents\GitHub\FileAdmin\target\resolution-cache\reports\fileadmin-fileadmin_2.11-docs.xml
 [debug] 	report for fileadmin#fileadmin_2.11;1.0 pom produced in C:\Users\Nisha\Documents\GitHub\FileAdmin\target\resolution-cache\reports\fileadmin-fileadmin_2.11-pom.xml
 [debug] 	report for fileadmin#fileadmin_2.11;1.0 scala-tool produced in C:\Users\Nisha\Documents\GitHub\FileAdmin\target\resolution-cache\reports\fileadmin-fileadmin_2.11-scala-tool.xml
-[debug] 	resolve done (10182ms resolve - 354ms download)
+[debug] 	resolve done (10506ms resolve - 374ms download)
 [info] Done updating.

@@ -1,4 +1,4 @@
-[error] C:\Users\Nisha\Documents\GitHub\FileAdministration\FileAdmin\app\views\test.scala.html:5: Expected '}' but found 'EOF'
-[error]     @play20.welcome(message, style = "Java")
-[error]                                             ^
+[error] C:\Users\Nisha\Documents\GitHub\FileAdmin\app\views\searchPage.scala.html:19: Not parsed?
+[error] }
+[error] ^
 [error] (compile:twirlCompileTemplates) Twirl compilation failed

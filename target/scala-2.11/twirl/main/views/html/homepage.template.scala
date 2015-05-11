@@ -20,13 +20,13 @@ import play.mvc.Http.Context.Implicit._
 import views.html._
 
 /**/
-object homepage extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[List[Customer],play.twirl.api.HtmlFormat.Appendable] {
+object homepage extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[FileAdminUser,play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(customers: List[Customer]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(created: FileAdminUser):play.twirl.api.HtmlFormat.Appendable = {
       _display_ {
 
-Seq[Any](format.raw/*1.29*/("""
+Seq[Any](format.raw/*1.26*/("""
 """),format.raw/*2.1*/("""<!DOCTYPE html>
 <html>
     <head lang="en">
@@ -96,19 +96,19 @@ Seq[Any](format.raw/*1.29*/("""
 </html>"""))}
   }
 
-  def render(customers:List[Customer]): play.twirl.api.HtmlFormat.Appendable = apply(customers)
+  def render(created:FileAdminUser): play.twirl.api.HtmlFormat.Appendable = apply(created)
 
-  def f:((List[Customer]) => play.twirl.api.HtmlFormat.Appendable) = (customers) => apply(customers)
+  def f:((FileAdminUser) => play.twirl.api.HtmlFormat.Appendable) = (created) => apply(created)
 
   def ref: this.type = this
 
 }
               /*
                   -- GENERATED --
-                  DATE: Tue May 05 23:12:19 CEST 2015
-                  SOURCE: C:/Users/Nisha/Documents/GitHub/FileAdministration/FileAdmin/app/views/homepage.scala.html
-                  HASH: 1ddcb5c06f018f9393cdbd2f63bdcea88cbfd9d1
-                  MATRIX: 734->1|849->28|877->30|1051->177|1079->178|1115->188|1281->327|1310->328|1349->340|1389->352|1418->353|1455->363|1590->471|1619->472|1658->484|1698->496|1727->497|1764->507|1857->573|1886->574|1925->586|1964->597|1993->598|2030->608|2309->860|2338->861|2377->873|2433->901|2462->902|2499->912|2591->977|2620->978|2657->988|3457->1761|3488->1771
+                  DATE: Mon May 11 10:01:41 CEST 2015
+                  SOURCE: C:/Users/Nisha/Documents/GitHub/FileAdmin/app/views/homepage.scala.html
+                  HASH: 45e3932f5ecb991287f11029c24965fd41f02e7e
+                  MATRIX: 733->1|845->25|873->27|1047->174|1075->175|1111->185|1277->324|1306->325|1345->337|1385->349|1414->350|1451->360|1586->468|1615->469|1654->481|1694->493|1723->494|1760->504|1853->570|1882->571|1921->583|1960->594|1989->595|2026->605|2305->857|2334->858|2373->870|2429->898|2458->899|2495->909|2587->974|2616->975|2653->985|3453->1758|3484->1768
                   LINES: 26->1|29->1|30->2|36->8|36->8|37->9|43->15|43->15|45->17|45->17|45->17|46->18|50->22|50->22|52->24|52->24|52->24|53->25|56->28|56->28|58->30|58->30|58->30|59->31|67->39|67->39|69->41|69->41|69->41|70->42|72->44|72->44|73->45|93->65|93->65
                   -- GENERATED --
               */

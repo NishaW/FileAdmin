@@ -11,7 +11,7 @@
     <fieldset>
 
     @select(custForm("myDropdownId"),
-       options = options(CustomerApplication.getCustomerList),
+       options = options(CustomerApplication.getCustomerList()),
         '_label -> "Select the Client",
         '_showConstraints -> false
     )

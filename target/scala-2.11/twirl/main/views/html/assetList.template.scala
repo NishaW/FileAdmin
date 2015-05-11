@@ -69,8 +69,8 @@ Seq[Any](format.raw/*1.23*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Wed May 06 22:37:15 CEST 2015
-                  SOURCE: C:/Users/Nisha/Documents/GitHub/FileAdministration/FileAdmin/app/views/assetList.scala.html
+                  DATE: Sun May 10 20:38:06 CEST 2015
+                  SOURCE: C:/Users/Nisha/Documents/GitHub/FileAdmin/app/views/assetList.scala.html
                   HASH: ca8daef7e254da876bf4ab93d5699faeb8c70716
                   MATRIX: 732->1|841->22|871->26|1236->364|1273->385|1313->387|1357->403|1413->432|1428->438|1459->448|1529->487|1568->499
                   LINES: 26->1|29->1|31->3|46->18|46->18|46->18|48->20|50->22|50->22|50->22|54->26|56->28

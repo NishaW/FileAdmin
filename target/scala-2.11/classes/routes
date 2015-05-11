@@ -4,8 +4,8 @@
 
 # Home page
 GET         /                    controllers.UserApplication.index()
-POST        /home/               controllers.CustomerApplication.home()
-GET         /home/               controllers.CustomerApplication.home()
+POST        /home/               controllers.UserApplication.login()
+GET         /home/               controllers.UserApplication.login()
 GET         /home/iframe         controllers.CustomerApplication.getIframe()
 GET         /home/getcust        controllers.CustomerApplication.getcust()
 GET         /home/test           controllers.UserApplication.test()
