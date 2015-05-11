@@ -1,4 +1,4 @@
-@(userForm:Form[SystemUser])
+@(userForm:Form[FileAdminUser])
 @import helper._
 @import helper.twitterBootstrap._
 <!DOCTYPE html>
@@ -13,13 +13,13 @@
         <body>
 
 @main("Login form") {
-    @helper.form(action = routes.CustomerApplication.home()) {
+    @helper.form(action = routes.UserApplication.login()) {
         <div class="container">
             <fieldset>
                 <h3 class="form-signin-heading">Please sign in</h3>
                  <br>
                 @helper.inputText(userForm("username"), '_label -> "Username", '_placeholder -> "Enter username")
-                    @helper.inputPassword(userForm("password"),'_label -> "Password", '_placeholder -> "Enter password")
+                @helper.inputPassword(userForm("password"),'_label -> "Password", '_placeholder -> "Enter password")
 
             </fieldset>
 

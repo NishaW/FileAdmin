@@ -1,31 +1,25 @@
 package controllers;
 
-import models.SystemUser;
+import models.FileAdminUser;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
-import se.c2.business.entity.user.UserManager;
-import se.c2.migration.AssetExportProcessor;
 import se.c2.util.Environments;
 import se.c2.util.resources.RM;
-import views.html.homepage;
 import views.html.index;
-import se.c2.business.entity.user.User;
-
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import views.html.homepage;
 import java.sql.SQLException;
 import java.util.List;
+
 import se.c2.migration.AssetExport;
-import views.html.test;
-import se.c2.migration.*;
+
 
 /**
  * Created by Nisha
  */
 public class UserApplication extends Controller {
 
-    final static Form<SystemUser> userForm = Form.form(SystemUser.class);
+    final static Form<FileAdminUser> userForm = Form.form(FileAdminUser.class);
 
     public static Result index() {
         return ok(index.render(userForm));
@@ -38,21 +32,10 @@ public class UserApplication extends Controller {
 
 
     public static Result login() {
+        Form<FileAdminUser> filledForm = userForm.bindFromRequest();
+        FileAdminUser created = filledForm.get();
 
-        final String client = "bong";
-        final String language = "en";
-        RM.register(client, language);
 
-        return ok();
-    }
-   /* public static Result login() {
-        Form<SystemUser> filledForm = userForm.bindFromRequest();
-        SystemUser created = filledForm.get();
-        return ok(homepage.render(created));
-
-        if(session().get("userId")!= null ) {
-            return ok(homepage.render(created));
-        } else {
             Authentication autName = authenticate(created.username, created.password);
 
             switch (autName) {
@@ -69,21 +52,16 @@ public class UserApplication extends Controller {
                     return ok(homepage.render(created));
 
                 }
-
+        return ok(homepage.render(created));
         }
 
-    }*/
 
     public static Authentication authenticate(String username, String password) {
-        //List <SystemUser> user= models.SystemUser.find().where().icontains("username", username).findList();
-        List<SystemUser> user = SystemUser.findviacore();
-
+        List <FileAdminUser> user= models.FileAdminUser.find().where().icontains("username", username).findList();
 
         if (user.size() != 0) {
             if (user.get(0).password.equals(password) && user.get(0).username.equals(username)) {
-                //session("userId", Integer.toString(user.get(0).userId));
-                //session("username",user.get(0).username);
-                // session("userType",user.get(0).userType);
+                session("username",user.get(0).username);
                 return Authentication.SUCCESS; // valid user
             }
             if (!user.get(0).password.equals(password)) {
@@ -101,37 +79,24 @@ public class UserApplication extends Controller {
         SUCCESS, INVALID_PASSWORD, INVALID_USERNAME
     }
 
-    public static String testMethod()  {
+    public static String testMethod() {
 
         final Environments env = Environments.BongDemo;
         try {
-            AssetExport ae = new AssetExport(env,"nisha_c2","c2pass12");
+            AssetExport ae = new AssetExport(env, "nisha_c2", "c2pass12");
 
             return "ok";
         } catch (SQLException e) {
             return e.toString();
         }
 
-       /* final Environments environment = Environments.BongDemo;
-        final String username = "marcus_a";
-        final String password = "testtest2";
-        final Path outputPath = Paths.get("\\\\airportstorage1\\storage\\coop\\transparent\\");
-        System.out.println("ShoppaAssetExportProcessor ");
-        try {
-        AssetExport assetExport = new AssetExport(environment, username, password);
-        AssetExportProcessor assetExportProcessor = new ShoppaAssetExportProcessor(environment, outputPath);
-            assetExport.process(assetExportProcessor);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }*/
-
-
     }
 
 
     public static Result test() {
-
-        return ok(test.render(testMethod()));
+        List<FileAdminUser> user = FileAdminUser.find().findList();
+                //.where().ge("order.orderId", order.orderId).findList();
+        return ok(views.html.userList.render(user));
     }
 
 }

@@ -3,9 +3,6 @@ package controllers;
 import models.Asset;
 import play.mvc.Controller;
 import play.mvc.Result;
-import scala.reflect.internal.Trees;
-import views.html.customerList;
-
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -21,31 +18,28 @@ public class FileApplication extends Controller {
         List<String> originalAssetList = new ArrayList<String>();
         List<String> thumbAssetList = new ArrayList<>();
 
-        File fOriginal = new File("C:\\Users\\Nisha\\Pictures\\Bong");
-        File fThumb = new File("C:\\Users\\Nisha\\Pictures\\Bong_Thumb");
-
-        //(Arrays.asList(fThumb.list())
-       // boolean x= Arrays.asList(fOriginal.list()).removeAll(Arrays.asList(fThumb.list()));
-
+        File fOriginal = new File("\\\\teststorage1\\storage\\bong\\storage\\");
+        File fThumb = new File("\\\\teststorage1\\storage\\bong\\smallth\\");
 
         ArrayList<String> orgFileNames = new ArrayList<String>(Arrays.asList(fOriginal.list()));
-       // Arrays.copyOfRange(orgFileNames,0,1);
 
+        try {
+            for (String fn : orgFileNames) {
 
-        for (String fn : orgFileNames) {
-
-            originalAssetList.add(fn.substring(2,fn.length()));
-
+                originalAssetList.add(fn.substring(2, fn.indexOf(".")));
+            }
+        } catch (StringIndexOutOfBoundsException e) {
+            e.printStackTrace();
         }
 
         ArrayList<String> thumbFileNames = new ArrayList<String>(Arrays.asList(fThumb.list()));
         for (String fn : thumbFileNames) {
 
-            thumbAssetList.add(fn.substring(2,fn.length()));
+            thumbAssetList.add(fn.substring(2, fn.indexOf(".")));
 
         }
-        boolean x= originalAssetList.removeAll(thumbAssetList);
-                //new ArrayList<String>(Arrays.asList(fOriginal.list()));
+        boolean x = originalAssetList.removeAll(thumbAssetList);
+
         List<Asset> assetListWithoutThumb = new ArrayList<Asset>();
 
         for (String s : originalAssetList) {

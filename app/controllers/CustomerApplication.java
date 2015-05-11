@@ -1,8 +1,6 @@
 package controllers;
 
 import models.Customer;
-import models.SystemUser;
-import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.customerList;
@@ -32,9 +30,9 @@ public class CustomerApplication extends Controller {
 
     }
 
-    public static Result home() {
-        return ok(homepage.render(getCustomerList()));
-    }
+   // public static Result home() {
+     //   return ok(homepage.render(getCustomerList()));
+    //}
 
     public static Result getIframe() {
         return ok(views.html.iframe.render());
@@ -43,8 +41,6 @@ public class CustomerApplication extends Controller {
     public static Result getcust() {
         return ok(customerList.render(getCustomerList()));
     }
-
-
 
 
 }

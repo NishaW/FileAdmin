@@ -11,13 +11,11 @@ import java.util.List;
 public class Customer extends Model {
 
     public String name;
-    public String language;
     public String path;
 
 public Customer(String name){
 
     this.name=name;
-    this.language = language;
     this.path = path;
 }
 

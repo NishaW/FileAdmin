@@ -247,6 +247,8 @@
       <library name="SBT: unmanaged-jars">
         <CLASSES>
           <root url="jar://$MODULE_DIR$/../../lib/core-3.3-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/sqljdbc4.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/play-java-jdbc_2.11.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
