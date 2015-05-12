@@ -4,15 +4,44 @@ import models.Asset;
 import play.mvc.Controller;
 import play.mvc.Result;
 import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Properties;
 
 /**
  * Created by Nisha on 2015-05-05.
  */
 public class FileApplication extends Controller {
 
+    private static final Properties properties = loadProperties();
+
+
+
+    public static Properties loadProperties() {
+        Properties properties = new Properties();
+        try {
+            properties.load(FileApplication.class.getResourceAsStream("/public/files/filepaths.properties"));
+        } catch (IOException e) {
+            throw new RuntimeException("Couldn't read the file." + e);
+
+        }
+        return properties;
+    }
+
+    public static String getFilePath(String client) {
+        if (properties.containsKey(client) ) {
+            return properties.getProperty(client);
+        }
+        return null;
+    }
+/*
+    public static String getOriginalPath(String property) {
+        String originalFilePath = property.split(",")[0];
+        String thumbFilePath = property.split(".")[1];
+        return (originalFilePath, thumbFilePath);
+    }*/
 
     public static List<Asset> getMissingThumbFiles() {
         List<String> originalAssetList = new ArrayList<String>();

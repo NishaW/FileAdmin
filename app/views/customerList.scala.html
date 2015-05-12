@@ -1,5 +1,5 @@
 @(customers: List[Customer])
-@import helper._
+
 
 <!DOCTYPE html>
 <html>
@@ -8,12 +8,16 @@
   <title></title>
 </head>
 <body>
-@select(
-    customers("myDropdownId"),
-    options = options(ComboboxOpts.myCustomOptions),
-    '_label -> "This is my dropdown label",
-    '_showConstraints -> false
-)
 
+    @helper.form(action = routes.FileApplication.getassetlist(), 'id -> "customerselectform") {
+
+    <select>
+        @for(customers <- customers) {
+            <option>@customers.name</option>
+        }
+
+    </select>
+    <input type="submit" class="btn btn-primary" value="Search">
+    }
 </body>
 </html>

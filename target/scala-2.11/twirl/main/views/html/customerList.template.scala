@@ -28,38 +28,26 @@ object customerList extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendab
 
 Seq[Any](format.raw/*1.29*/("""
 
-"""),format.raw/*3.1*/("""<!DOCTYPE html>
+
+"""),format.raw/*4.1*/("""<!DOCTYPE html>
 <html>
 <head lang="en">
   <meta charset="UTF-8">
   <title></title>
 </head>
 <body>
-    <table border=0 width=40% height=30% align=left cellpadding=1 cellspacing=1>
-        <thead>
-            <tr>
-                <th align="left">Customer Name</th>
 
-            </tr>
-        </thead>
-        <tbody>
-        """),_display_(/*18.10*/for(customers <- customers) yield /*18.37*/ {_display_(Seq[Any](format.raw/*18.39*/("""
+    """),_display_(/*12.6*/helper/*12.12*/.form(action = routes.FileApplication.getassetlist(), 'id -> "customerselectform")/*12.94*/ {_display_(Seq[Any](format.raw/*12.96*/("""
 
-            """),format.raw/*20.13*/("""<tr>
+    """),format.raw/*14.5*/("""<select>
+        """),_display_(/*15.10*/for(customers <- customers) yield /*15.37*/ {_display_(Seq[Any](format.raw/*15.39*/("""
+            """),format.raw/*16.13*/("""<option>"""),_display_(/*16.22*/customers/*16.31*/.name),format.raw/*16.36*/("""</option>
+        """)))}),format.raw/*17.10*/("""
 
-                <td>"""),_display_(/*22.22*/customers/*22.31*/.name),format.raw/*22.36*/("""</td>
-                <td>"""),_display_(/*23.22*/customers/*23.31*/.language),format.raw/*23.40*/("""</td>
-                <td>"""),_display_(/*24.22*/customers/*24.31*/.path),format.raw/*24.36*/("""</td>
-
-
-
-            </tr>
-        """)))}),format.raw/*29.10*/("""
-
-        """),format.raw/*31.9*/("""</tbody>
-    </table>
-
-</body>
+    """),format.raw/*19.5*/("""</select>
+    <input type="submit" class="btn btn-primary" value="Search">
+    """)))}),format.raw/*21.6*/("""
+"""),format.raw/*22.1*/("""</body>
 </html>"""))}
   }
 
@@ -72,11 +60,11 @@ Seq[Any](format.raw/*1.29*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sun May 10 20:38:06 CEST 2015
+                  DATE: Mon May 11 21:56:45 CEST 2015
                   SOURCE: C:/Users/Nisha/Documents/GitHub/FileAdmin/app/views/customerList.scala.html
-                  HASH: cd11691d8e29adce1935070e7a7d50d0f2be0aa8
-                  MATRIX: 738->1|853->28|883->32|1250->372|1293->399|1333->401|1377->417|1433->446|1451->455|1477->460|1532->488|1550->497|1580->506|1635->534|1653->543|1679->548|1751->589|1790->601
-                  LINES: 26->1|29->1|31->3|46->18|46->18|46->18|48->20|50->22|50->22|50->22|51->23|51->23|51->23|52->24|52->24|52->24|57->29|59->31
+                  HASH: 5a4c18434e5229e85ca2fbd1370f91667e2b6d23
+                  MATRIX: 738->1|853->28|885->34|1023->146|1038->152|1129->234|1169->236|1204->244|1250->263|1293->290|1333->292|1375->306|1411->315|1429->324|1455->329|1506->349|1541->357|1653->439|1682->441
+                  LINES: 26->1|29->1|32->4|40->12|40->12|40->12|40->12|42->14|43->15|43->15|43->15|44->16|44->16|44->16|44->16|45->17|47->19|49->21|50->22
                   -- GENERATED --
               */
           

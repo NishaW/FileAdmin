@@ -67,16 +67,14 @@ public class UserApplication extends Controller {
             if (!user.get(0).password.equals(password)) {
                 return Authentication.INVALID_PASSWORD; //password is incorrect
             }
-            if (!user.get(0).username.equals(username)) {
-                return Authentication.INVALID_USERNAME; //username is incorrect
-            }
+
         }
-        return null; //Authentication.NEW; //user does not exist
+        return Authentication.INVALID_USERNAME; //user does not exist
 
     }
 
     public static enum Authentication {
-        SUCCESS, INVALID_PASSWORD, INVALID_USERNAME
+        SUCCESS, INVALID_PASSWORD, INVALID_USERNAME,
     }
 
     public static String testMethod() {

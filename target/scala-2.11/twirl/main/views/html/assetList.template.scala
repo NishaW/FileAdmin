@@ -47,7 +47,7 @@ Seq[Any](format.raw/*1.23*/("""
 
             """),format.raw/*20.13*/("""<tr>
 
-                <td>"""),_display_(/*22.22*/assets/*22.28*/.assetName),format.raw/*22.38*/("""</td>
+                <td><input type="checkbox" name="selectAsset" value="Bike">"""),_display_(/*22.77*/assets/*22.83*/.assetName),format.raw/*22.93*/("""<br></td>
 
 
             </tr>
@@ -69,10 +69,10 @@ Seq[Any](format.raw/*1.23*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sun May 10 20:38:06 CEST 2015
+                  DATE: Tue May 12 13:41:40 CEST 2015
                   SOURCE: C:/Users/Nisha/Documents/GitHub/FileAdmin/app/views/assetList.scala.html
-                  HASH: ca8daef7e254da876bf4ab93d5699faeb8c70716
-                  MATRIX: 732->1|841->22|871->26|1236->364|1273->385|1313->387|1357->403|1413->432|1428->438|1459->448|1529->487|1568->499
+                  HASH: 281f2651c8b54dbfff54defeadcb7d29ce255540
+                  MATRIX: 732->1|841->22|871->26|1236->364|1273->385|1313->387|1357->403|1468->487|1483->493|1514->503|1588->546|1627->558
                   LINES: 26->1|29->1|31->3|46->18|46->18|46->18|48->20|50->22|50->22|50->22|54->26|56->28
                   -- GENERATED --
               */
