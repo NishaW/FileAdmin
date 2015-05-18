@@ -37,18 +37,17 @@ Seq[Any](format.raw/*1.32*/("""
 
         </head>
         <h1></h1>
-        <body>
+        <body style="background-color:#eee">
 
-"""),_display_(/*15.2*/main("Login form")/*15.20*/ {_display_(Seq[Any](format.raw/*15.22*/("""
-    """),_display_(/*16.6*/helper/*16.12*/.form(action = routes.UserApplication.login())/*16.58*/ {_display_(Seq[Any](format.raw/*16.60*/("""
-        """),format.raw/*17.9*/("""<div class="container">
+    """),_display_(/*15.6*/helper/*15.12*/.form(action = routes.UserApplication.login())/*15.58*/ {_display_(Seq[Any](format.raw/*15.60*/("""
+        """),format.raw/*16.9*/("""<div class="container">
             <fieldset>
-                <h3 class="form-signin-heading">Please sign in</h3>
+                <h3 class="form-signin-heading">File Admin Login</h3>
                  <br>
-                """),_display_(/*21.18*/helper/*21.24*/.inputText(userForm("username"), '_label -> "Username", '_placeholder -> "Enter username")),format.raw/*21.114*/("""
-                """),_display_(/*22.18*/helper/*22.24*/.inputPassword(userForm("password"),'_label -> "Password", '_placeholder -> "Enter password")),format.raw/*22.117*/("""
+                """),_display_(/*20.18*/helper/*20.24*/.inputText(userForm("username"), '_label -> "Username", '_placeholder -> "Enter username")),format.raw/*20.114*/("""
+                """),_display_(/*21.18*/helper/*21.24*/.inputPassword(userForm("password"),'_label -> "Password", '_placeholder -> "Enter password")),format.raw/*21.117*/("""
 
-            """),format.raw/*24.13*/("""</fieldset>
+            """),format.raw/*23.13*/("""</fieldset>
 
 
 
@@ -59,8 +58,8 @@ Seq[Any](format.raw/*1.32*/("""
 
     </html>
 
-    """)))}),format.raw/*35.6*/("""
-""")))}),format.raw/*36.2*/("""
+    """)))}),format.raw/*34.6*/("""
+
 
 """))}
   }
@@ -74,11 +73,11 @@ Seq[Any](format.raw/*1.32*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Mon May 11 10:55:20 CEST 2015
+                  DATE: Thu May 14 19:10:57 CEST 2015
                   SOURCE: C:/Users/Nisha/Documents/GitHub/FileAdmin/app/views/index.scala.html
-                  HASH: 4b48244b1b9e78cc37da3bfa496b52f8686fea80
-                  MATRIX: 736->1|902->31|930->86|1074->204|1088->210|1152->253|1255->330|1269->336|1326->372|1382->402|1396->408|1458->450|1577->543|1604->561|1644->563|1677->570|1692->576|1747->622|1787->624|1824->634|2009->792|2024->798|2136->888|2182->907|2197->913|2312->1006|2356->1022|2557->1193|2590->1196
-                  LINES: 26->1|30->1|31->4|34->7|34->7|34->7|35->8|35->8|35->8|36->9|36->9|36->9|42->15|42->15|42->15|43->16|43->16|43->16|43->16|44->17|48->21|48->21|48->21|49->22|49->22|49->22|51->24|62->35|63->36
+                  HASH: 61a34949c244f017b1c51dfdd83090016901dba2
+                  MATRIX: 736->1|902->31|930->86|1074->204|1088->210|1152->253|1255->330|1269->336|1326->372|1382->402|1396->408|1458->450|1611->577|1626->583|1681->629|1721->631|1758->641|1945->801|1960->807|2072->897|2118->916|2133->922|2248->1015|2292->1031|2493->1202
+                  LINES: 26->1|30->1|31->4|34->7|34->7|34->7|35->8|35->8|35->8|36->9|36->9|36->9|42->15|42->15|42->15|42->15|43->16|47->20|47->20|47->20|48->21|48->21|48->21|50->23|61->34
                   -- GENERATED --
               */
           

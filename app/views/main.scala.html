@@ -6,14 +6,30 @@
     <head>
         <title>@title</title>
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
-
         <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
         <script src="@routes.Assets.at("javascripts/hello.js")" type="text/javascript"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/signin.css")">
+        <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/heading.css")">
+        <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+
+
     </head>
-    <body>
-        <div class="container">
+
+        <body style="background-color:#eee">
+            <div class = "logout" >
+                <a href="@routes.UserApplication.logout()"><button class="btn btn-primary">Logout</button></a></div>
+
+            <img src="/assets/logo.png" />
+            <br>
+            <br>
+            <div class="menuBar">
+                <ul>
+                    <li style="width: 150px"><a href="@routes.UserApplication.login()">Home</a></li>
+                    <li style="width: 190px"><a href="getcust">Select Customer</a></li>
+                </ul>
+            </div>
+            <br>
         @content
-        </div>
 
     </body>
 </html>

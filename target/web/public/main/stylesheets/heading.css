@@ -1,0 +1,41 @@
+.menuBar {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 40px;
+    background-color : lightblue ;
+
+}
+
+.menuBar ul {
+    list-style-type : none ;
+    margin : 0 ;
+    padding : 0 ;
+    overflow : hidden ;
+}
+
+.menuBar li {
+    float : left ;
+    background-color : lightblue ;
+
+}
+
+.menuBar a {
+    display : block ;
+    font-weight : bold ;
+    color : #000000 ;
+    background-color : lightblue ;
+    text-align : center ;
+    padding : 4px ;
+    text-decoration : none ;
+    text-transform : uppercase ;
+}
+
+.menuBar a:hover, a :active {
+    background-color : deepskyblue ;
+    height: 40px;
+}
+.logout {
+    text-align: right;
+    font-size: medium;
+}

@@ -1,9 +1,15 @@
-2015-05-12 13:48:59,283 - [INFO] - from play in pool-10-thread-5 
+2015-05-18 09:09:37,149 - [INFO] - from play in pool-10-thread-2 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 
-2015-05-12 13:49:07,296 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-18 09:10:17,273 - [INFO] - from play in play-internal-execution-context-1 
 database [default] connected at jdbc:sqlserver://c2-db01\sqlexpress:1433;authenticationScheme=nativeAuthentication;xopenStates=false;sendTimeAsDatetime=true;trustServerCertificate=false;sendStringParametersAsUnicode=true;selectMethod=direct;responseBuffering=adaptive;packetSize=8000;multiSubnetFailover=false;loginTimeout=15;lockTimeout=-1;lastUpdateCount=true;encrypt=false;disableStatementPooling=true;databaseName=bong_ap;applicationName=Microsoft JDBC Driver for SQL Server;applicationIntent=readwrite;
 
-2015-05-12 13:49:09,058 - [INFO] - from play in play-internal-execution-context-1 
+2015-05-18 09:10:36,461 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
+
+2015-05-18 09:18:51,145 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:sqlserver://c2-db01\sqlexpress:1433;authenticationScheme=nativeAuthentication;xopenStates=false;sendTimeAsDatetime=true;trustServerCertificate=false;sendStringParametersAsUnicode=true;selectMethod=direct;responseBuffering=adaptive;packetSize=8000;multiSubnetFailover=false;loginTimeout=15;lockTimeout=-1;lastUpdateCount=true;encrypt=false;disableStatementPooling=true;databaseName=bong_ap;applicationName=Microsoft JDBC Driver for SQL Server;applicationIntent=readwrite;
+
+2015-05-18 09:18:52,851 - [INFO] - from play in play-internal-execution-context-1 
 Application started (Dev)
 

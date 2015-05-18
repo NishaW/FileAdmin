@@ -1,23 +1,15 @@
-@(customers: List[Customer])
+@(customers: List[Customer],userForm:Form[Customer])
 
 
-<!DOCTYPE html>
-<html>
-<head lang="en">
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
-
+@main("Customer page") {
     @helper.form(action = routes.FileApplication.getassetlist(), 'id -> "customerselectform") {
 
-    <select>
+    <select name="name">
         @for(customers <- customers) {
-            <option>@customers.name</option>
+            <option name="@customers.name">@customers.name</option>
         }
 
     </select>
     <input type="submit" class="btn btn-primary" value="Search">
     }
-</body>
-</html>
+}

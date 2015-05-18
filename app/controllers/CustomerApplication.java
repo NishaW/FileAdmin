@@ -35,12 +35,11 @@ public class CustomerApplication extends Controller {
 
     }
 
-    public static Result getIframe() {
-        return ok(views.html.iframe.render());
-    }
+
 
     public static Result getcust() {
-        return ok(customerList.render(getCustomerList()));
+
+        return ok(customerList.render(getCustomerList(),custForm));
     }
 
 

@@ -11,13 +11,17 @@ import java.util.List;
 public class Customer extends Model {
 
     public String name;
-    public String path;
 
 public Customer(String name){
 
     this.name=name;
-    this.path = path;
 }
+
+    public Customer(){
+
+
+    }
+
 
 
 }

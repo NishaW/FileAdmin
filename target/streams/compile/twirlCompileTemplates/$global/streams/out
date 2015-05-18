@@ -1,4 +1,4 @@
-[error] C:\Users\Nisha\Documents\GitHub\FileAdmin\app\views\searchPage.scala.html:19: Not parsed?
-[error] }
-[error] ^
+[error] C:\Users\Nisha\Documents\GitHub\FileAdmin\app\views\assetList.scala.html:20: Expected '}' but found '@'
+[error]             @ i+=i+1;
+[error]             ^
 [error] (compile:twirlCompileTemplates) Twirl compilation failed
