@@ -228,26 +228,14 @@
     <orderEntry type="library" name="SBT: se.c2:photoshop:unversioned" level="project" />
     <orderEntry type="library" name="SBT: velocity:velocity:1.5" level="project" />
     <orderEntry type="library" name="SBT: xuggle:xuggle-xuggler:5.4" level="project" />
-    <orderEntry type="library" name="SBT: antlr:antlr:2.7.2" level="project" />
-    <orderEntry type="library" name="SBT: commons-beanutils:commons-beanutils:1.7.0" level="project" />
-    <orderEntry type="library" name="SBT: commons-collections:commons-collections:3.1" level="project" />
-    <orderEntry type="library" name="SBT: commons-digester:commons-digester:1.7" level="project" />
-    <orderEntry type="library" name="SBT: commons-validator:commons-validator:1.1.4" level="project" />
-    <orderEntry type="library" name="SBT: jfree:jcommon:1.0.16" level="project" />
-    <orderEntry type="library" name="SBT: jfree:jfreechart:1.0.13" level="project" />
-    <orderEntry type="library" name="SBT: org.mockito:mockito-all:1.9.5" level="project" />
-    <orderEntry type="library" name="SBT: struts:struts:1.2.9" level="project" />
-    <orderEntry type="library" name="SBT: struts-menu:struts-menu:2.4.3" level="project" />
-    <orderEntry type="library" name="SBT: taglibs:standard:1.1.2" level="project" />
-    <orderEntry type="library" name="SBT: velocity-tools:velocity-tools-view:1.0" level="project" />
-    <orderEntry type="library" name="SBT: xalan:xalan:2.5.1" level="project" />
-    <orderEntry type="library" name="SBT: se.c2:core:3.2" level="project" />
-    <orderEntry type="library" name="SBT: se.c2:core_web:1.5-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="SBT: se.c2:core:3.4-SNAPSHOT" level="project" />
     <orderEntry type="module-library">
       <library name="SBT: unmanaged-jars">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../lib/core-3.3-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/core_web-1.5-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/HikariCP-java6-2.3.5.jar!/" />
           <root url="jar://$MODULE_DIR$/../../lib/sqljdbc4.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/core-3.4-SNAPSHOT.jar!/" />
           <root url="jar://$MODULE_DIR$/../../lib/play-java-jdbc_2.11.jar!/" />
         </CLASSES>
         <JAVADOC />

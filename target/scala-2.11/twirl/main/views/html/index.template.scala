@@ -23,12 +23,12 @@ import views.html._
 object index extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[Form[FileAdminUser],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(userForm:Form[FileAdminUser]):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(userForm: Form[FileAdminUser]):play.twirl.api.HtmlFormat.Appendable = {
       _display_ {import helper._
 import helper.twitterBootstrap._
 
-Seq[Any](format.raw/*1.32*/("""
-"""),format.raw/*4.1*/("""<!DOCTYPE html>
+Seq[Any](format.raw/*1.33*/("""
+    """),format.raw/*3.1*/("""    """),format.raw/*4.1*/("""<!DOCTYPE html>
     <html>
         <head>
             <link rel="stylesheet" type="text/css" media="screen" href=""""),_display_(/*7.74*/routes/*7.80*/.Assets.at("stylesheets/bootstrap.min.css")),format.raw/*7.123*/("""">
@@ -37,28 +37,26 @@ Seq[Any](format.raw/*1.32*/("""
 
         </head>
         <h1></h1>
-        <body style="background-color:#eee">
+        <body style="background-color : #eee">
 
-    """),_display_(/*15.6*/helper/*15.12*/.form(action = routes.UserApplication.login())/*15.58*/ {_display_(Seq[Any](format.raw/*15.60*/("""
-        """),format.raw/*16.9*/("""<div class="container">
-            <fieldset>
-                <h3 class="form-signin-heading">File Admin Login</h3>
-                 <br>
-                """),_display_(/*20.18*/helper/*20.24*/.inputText(userForm("username"), '_label -> "Username", '_placeholder -> "Enter username")),format.raw/*20.114*/("""
-                """),_display_(/*21.18*/helper/*21.24*/.inputPassword(userForm("password"),'_label -> "Password", '_placeholder -> "Enter password")),format.raw/*21.117*/("""
+        """),_display_(/*15.10*/helper/*15.16*/.form(action = routes.UserApplication.login())/*15.62*/ {_display_(Seq[Any](format.raw/*15.64*/("""
+            """),format.raw/*16.13*/("""<div class="container">
+                <fieldset>
+                    <h3 class="form-signin-heading">File Admin Login</h3>
+                    <br>
+                        """),_display_(/*20.26*/helper/*20.32*/.inputText(userForm("username"), '_label -> "Username", '_placeholder -> "Enter username")),format.raw/*20.122*/("""
+                        """),_display_(/*21.26*/helper/*21.32*/.inputPassword(userForm("password"), '_label -> "Password", '_placeholder -> "Enter password")),format.raw/*21.126*/("""
 
-            """),format.raw/*23.13*/("""</fieldset>
+                """),format.raw/*23.17*/("""</fieldset>
 
+                <input type="submit" class="btn btn-primary" value="Sign in">
 
-
-            <input type="submit" class="btn btn-primary" value="Sign in">
-
-        </div> <!-- /container -->
+            </div> <!-- /container -->
         </body>
 
     </html>
 
-    """)))}),format.raw/*34.6*/("""
+""")))}),format.raw/*32.2*/("""
 
 
 """))}
@@ -73,11 +71,11 @@ Seq[Any](format.raw/*1.32*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Thu May 14 19:10:57 CEST 2015
+                  DATE: Sun May 24 22:59:40 CEST 2015
                   SOURCE: C:/Users/Nisha/Documents/GitHub/FileAdmin/app/views/index.scala.html
-                  HASH: 61a34949c244f017b1c51dfdd83090016901dba2
-                  MATRIX: 736->1|902->31|930->86|1074->204|1088->210|1152->253|1255->330|1269->336|1326->372|1382->402|1396->408|1458->450|1611->577|1626->583|1681->629|1721->631|1758->641|1945->801|1960->807|2072->897|2118->916|2133->922|2248->1015|2292->1031|2493->1202
-                  LINES: 26->1|30->1|31->4|34->7|34->7|34->7|35->8|35->8|35->8|36->9|36->9|36->9|42->15|42->15|42->15|42->15|43->16|47->20|47->20|47->20|48->21|48->21|48->21|50->23|61->34
+                  HASH: a6126d95a216d9b6ae37f92a919c0b4e8a268fd8
+                  MATRIX: 736->1|903->32|935->56|965->95|1109->213|1123->219|1187->262|1290->339|1304->345|1361->381|1417->411|1431->417|1493->459|1653->592|1668->598|1723->644|1763->646|1805->660|2011->839|2026->845|2138->935|2192->962|2207->968|2323->1062|2371->1082|2572->1253
+                  LINES: 26->1|30->1|31->3|31->4|34->7|34->7|34->7|35->8|35->8|35->8|36->9|36->9|36->9|42->15|42->15|42->15|42->15|43->16|47->20|47->20|47->20|48->21|48->21|48->21|50->23|59->32
                   -- GENERATED --
               */
           

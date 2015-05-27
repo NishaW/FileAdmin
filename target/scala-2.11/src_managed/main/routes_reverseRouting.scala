@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/Nisha/Documents/GitHub/FileAdmin/conf/routes
-// @HASH:4fbf41961eee660d61c5b11514b9f49a3fdeb2b5
-// @DATE:Sun May 17 21:08:35 CEST 2015
+// @HASH:e37410c4fb6776215896625cb0615a87f97368d7
+// @DATE:Sun May 24 20:18:15 CEST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -31,7 +31,7 @@ class ReverseFileApplication {
 
 
 // @LINE:10
-def getassetlist(): Call = {
+def getAssetList(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "home/asset")
 }
@@ -52,9 +52,9 @@ class ReverseCustomerApplication {
 
 
 // @LINE:9
-def getcust(): Call = {
+def getCust(): Call = {
    import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "home/getcust")
+   Call("GET", _prefix + { _defaultPrefix } + "home/getCust")
 }
                         
 
@@ -132,8 +132,8 @@ class ReverseFileApplication {
 
 
 // @LINE:10
-def getassetlist : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.FileApplication.getassetlist",
+def getAssetList : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FileApplication.getAssetList",
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "home/asset"})
@@ -161,11 +161,11 @@ class ReverseCustomerApplication {
 
 
 // @LINE:9
-def getcust : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.CustomerApplication.getcust",
+def getCust : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.CustomerApplication.getCust",
    """
       function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "home/getcust"})
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "home/getCust"})
       }
    """
 )
@@ -261,8 +261,8 @@ class ReverseFileApplication {
 
 
 // @LINE:10
-def getassetlist(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.FileApplication.getassetlist(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getassetlist", Seq(), "GET", """""", _prefix + """home/asset""")
+def getAssetList(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FileApplication.getAssetList(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getAssetList", Seq(), "GET", """""", _prefix + """home/asset""")
 )
                       
 
@@ -280,8 +280,8 @@ class ReverseCustomerApplication {
 
 
 // @LINE:9
-def getcust(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.CustomerApplication.getcust(), HandlerDef(this.getClass.getClassLoader, "", "controllers.CustomerApplication", "getcust", Seq(), "GET", """""", _prefix + """home/getcust""")
+def getCust(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.CustomerApplication.getCust(), HandlerDef(this.getClass.getClassLoader, "", "controllers.CustomerApplication", "getCust", Seq(), "GET", """""", _prefix + """home/getCust""")
 )
                       
 

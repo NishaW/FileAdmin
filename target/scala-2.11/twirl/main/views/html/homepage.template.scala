@@ -28,9 +28,43 @@ object homepage extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,F
 
 Seq[Any](format.raw/*1.26*/("""
 
-"""),_display_(/*3.2*/main("Home page")/*3.19*/ {_display_(Seq[Any](format.raw/*3.21*/("""
+    """),_display_(/*3.6*/main("Home page")/*3.23*/ {_display_(Seq[Any](format.raw/*3.25*/("""
+        """),format.raw/*4.9*/("""<br>
+        <br>
 
-""")))}))}
+        <div class="table">
+            <tr>
+                <td>
+                    <div class="img">
+                        <img src="/assets/assa_abloy_logo.png" alt="assa">
+                    </div>
+                    <div class="img">
+                        <img src="/assets/boxer_logo.png" alt="boxer">
+                    </div>
+                    <div class="img">
+                        <img src="/assets/entrematic_logo.png" alt="entrematic">
+                    </div>
+                    <div class="img">
+                        <img src="/assets/intrum_justicia_logo.png" alt="intrum">
+                    </div>
+                    <div class="img">
+                        <img src="/assets/tiger_of_sweden_logo.png" alt="tiger">
+                    </div>
+                    <div class="img">
+                        <img src="/assets/polarn_o_pyret_logo.png" alt="pop">
+                    </div>
+                    <div class="img">
+                        <img src="/assets/samhall_logo.png" alt="samhall">
+                    </div>
+                    <div class="img">
+                        <img src="/assets/wwl_logo.png" alt="wwl">
+                    </div>
+                </td>
+            </tr>
+        </div>
+
+
+    """)))}))}
   }
 
   def render(created:FileAdminUser): play.twirl.api.HtmlFormat.Appendable = apply(created)
@@ -42,11 +76,11 @@ Seq[Any](format.raw/*1.26*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Thu May 14 15:53:05 CEST 2015
+                  DATE: Sun May 24 22:59:39 CEST 2015
                   SOURCE: C:/Users/Nisha/Documents/GitHub/FileAdmin/app/views/homepage.scala.html
-                  HASH: de5f83f1c90753f3c82ad7c78b9997fb808c5958
-                  MATRIX: 733->1|845->25|875->30|900->47|939->49
-                  LINES: 26->1|29->1|31->3|31->3|31->3
+                  HASH: 0fba75ec0064834e0fb2409bf3f7391b07618201
+                  MATRIX: 733->1|845->25|879->34|904->51|943->53|979->63
+                  LINES: 26->1|29->1|31->3|31->3|31->3|32->4
                   -- GENERATED --
               */
           

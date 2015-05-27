@@ -6,8 +6,8 @@
 GET         /                    controllers.UserApplication.index()
 POST        /home/               controllers.UserApplication.login()
 GET         /home/               controllers.UserApplication.login()
-GET         /home/getcust        controllers.CustomerApplication.getcust()
-GET         /home/asset          controllers.FileApplication.getassetlist()
+GET         /home/getCust        controllers.CustomerApplication.getCust()
+GET         /home/asset          controllers.FileApplication.getAssetList()
 GET         /home/thumb          controllers.FileApplication.generateThumbNails()
 GET         /logout                           controllers.UserApplication.logout()
 

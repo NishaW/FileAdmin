@@ -1,0 +1,25 @@
+[0m[[0minfo[0m] [0mPackaging C:\Users\Nisha\Documents\GitHub\FileAdmin\target\scala-2.11\fileadmin_2.11-1.0-sources.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	controllers\CustomerApplication.java[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\Nisha\Documents\GitHub\FileAdmin\app\controllers\CustomerApplication.java[0m
+[0m[[0mdebug[0m] [0m	controllers\UserApplication.java[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\Nisha\Documents\GitHub\FileAdmin\app\controllers\UserApplication.java[0m
+[0m[[0mdebug[0m] [0m	controllers\FileApplication.java[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\Nisha\Documents\GitHub\FileAdmin\app\controllers\FileApplication.java[0m
+[0m[[0mdebug[0m] [0m	routes[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\Nisha\Documents\GitHub\FileAdmin\conf\routes[0m
+[0m[[0mdebug[0m] [0m	evolutions[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\Nisha\Documents\GitHub\FileAdmin\conf\evolutions[0m
+[0m[[0mdebug[0m] [0m	models\Asset.java[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\Nisha\Documents\GitHub\FileAdmin\app\models\Asset.java[0m
+[0m[[0mdebug[0m] [0m	models\FileAdminUser.java[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\Nisha\Documents\GitHub\FileAdmin\app\models\FileAdminUser.java[0m
+[0m[[0mdebug[0m] [0m	application.conf[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\Nisha\Documents\GitHub\FileAdmin\conf\application.conf[0m
+[0m[[0mdebug[0m] [0m	models\Customer.java[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\Nisha\Documents\GitHub\FileAdmin\app\models\Customer.java[0m
+[0m[[0mdebug[0m] [0m	evolutions\default[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\Nisha\Documents\GitHub\FileAdmin\conf\evolutions\default[0m
+[0m[[0mdebug[0m] [0m	evolutions\default\1.sql[0m
+[0m[[0mdebug[0m] [0m	  C:\Users\Nisha\Documents\GitHub\FileAdmin\conf\evolutions\default\1.sql[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

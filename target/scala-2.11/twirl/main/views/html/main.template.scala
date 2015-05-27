@@ -39,24 +39,24 @@ Seq[Any](format.raw/*1.32*/("""
         <link rel="stylesheet" type="text/css" media="screen" href=""""),_display_(/*11.70*/routes/*11.76*/.Assets.at("stylesheets/signin.css")),format.raw/*11.112*/("""">
         <link rel="stylesheet" type="text/css" media="screen" href=""""),_display_(/*12.70*/routes/*12.76*/.Assets.at("stylesheets/heading.css")),format.raw/*12.113*/("""">
         <link rel="stylesheet" type="text/css" media="screen" href=""""),_display_(/*13.70*/routes/*13.76*/.Assets.at("stylesheets/bootstrap.min.css")),format.raw/*13.119*/("""">
-
+        <link rel="stylesheet" type="text/css" media="screen" href=""""),_display_(/*14.70*/routes/*14.76*/.Assets.at("stylesheets/imageGrid.css")),format.raw/*14.115*/("""">
 
     </head>
 
-        <body style="background-color:#eee">
-            <div class = "logout" >
-                <a href=""""),_display_(/*20.27*/routes/*20.33*/.UserApplication.logout()),format.raw/*20.58*/(""""><button class="btn btn-primary">Logout</button></a></div>
+    <body style="background-color : #eee">
+        <div class = "logout" >
+            <a href=""""),_display_(/*20.23*/routes/*20.29*/.UserApplication.logout()),format.raw/*20.54*/(""""><button class="btn btn-primary">Logout</button></a></div>
 
-            <img src="/assets/logo.png" />
-            <br>
-            <br>
-            <div class="menuBar">
-                <ul>
-                    <li style="width: 150px"><a href=""""),_display_(/*27.56*/routes/*27.62*/.UserApplication.login()),format.raw/*27.86*/("""">Home</a></li>
-                    <li style="width: 190px"><a href="getcust">Select Customer</a></li>
-                </ul>
-            </div>
-            <br>
+        <img src="/assets/logo.png" />
+        <br>
+        <br>
+        <div class="menuBar">
+            <ul>
+                <li style="width : 150px"><a href=""""),_display_(/*27.53*/routes/*27.59*/.UserApplication.login()),format.raw/*27.83*/("""">Home</a></li>
+                <li style="width : 190px"><a href="getCust">Select Customer</a></li>
+            </ul>
+        </div>
+        <br>
         """),_display_(/*32.10*/content),format.raw/*32.17*/("""
 
     """),format.raw/*34.5*/("""</body>
@@ -73,11 +73,11 @@ Seq[Any](format.raw/*1.32*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Sun May 17 22:12:39 CEST 2015
+                  DATE: Sun May 24 22:59:40 CEST 2015
                   SOURCE: C:/Users/Nisha/Documents/GitHub/FileAdmin/app/views/main.scala.html
-                  HASH: aaa5cc16d33da8a93280d9d0c53539a9d886abc1
-                  MATRIX: 727->1|845->31|873->33|950->84|975->89|1063->151|1077->157|1131->191|1218->252|1232->258|1284->290|1336->315|1351->321|1406->355|1537->459|1552->465|1610->501|1709->573|1724->579|1783->616|1882->688|1897->694|1962->737|2114->862|2129->868|2175->893|2450->1141|2465->1147|2510->1171|2708->1342|2736->1349|2769->1355
-                  LINES: 26->1|29->1|31->3|35->7|35->7|36->8|36->8|36->8|37->9|37->9|37->9|38->10|38->10|38->10|39->11|39->11|39->11|40->12|40->12|40->12|41->13|41->13|41->13|48->20|48->20|48->20|55->27|55->27|55->27|60->32|60->32|62->34
+                  HASH: 707bc8eb655ec399302eed8797609d7d61bcebe6
+                  MATRIX: 727->1|845->31|873->33|950->84|975->89|1063->151|1077->157|1131->191|1218->252|1232->258|1284->290|1336->315|1351->321|1406->355|1537->459|1552->465|1610->501|1709->573|1724->579|1783->616|1882->688|1897->694|1962->737|2061->809|2076->815|2137->854|2278->968|2293->974|2339->999|2591->1224|2606->1230|2651->1254|2834->1410|2862->1417|2895->1423
+                  LINES: 26->1|29->1|31->3|35->7|35->7|36->8|36->8|36->8|37->9|37->9|37->9|38->10|38->10|38->10|39->11|39->11|39->11|40->12|40->12|40->12|41->13|41->13|41->13|42->14|42->14|42->14|48->20|48->20|48->20|55->27|55->27|55->27|60->32|60->32|62->34
                   -- GENERATED --
               */
           

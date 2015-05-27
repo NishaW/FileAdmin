@@ -1,16 +1,13 @@
 package controllers;
 
 import models.Customer;
-import models.FileAdminUser;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
 import views.html.customerList;
-import views.html.homepage;
 import se.c2.util.Environments;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -22,24 +19,25 @@ public class CustomerApplication extends Controller {
 
 
     public static List<Customer> getCustomerList() {
-
+// Retrieve all the Customers from Environments class.
         List<Customer> cusList = new ArrayList<Customer>();
+        try {
+            for (Environments env : Environments.values()) {
 
-        for (Environments mount : Environments.values()) {
+                cusList.add(new Customer(env.name()));
 
-            cusList.add(new Customer(mount.name()));
-
+            }
+        } catch (NumberFormatException e) {
+            e.printStackTrace();
         }
-
         return cusList;
 
     }
 
 
+    public static Result getCust() {
 
-    public static Result getcust() {
-
-        return ok(customerList.render(getCustomerList(),custForm));
+        return ok(customerList.render(getCustomerList(), custForm));
     }
 
 

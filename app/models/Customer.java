@@ -12,16 +12,15 @@ public class Customer extends Model {
 
     public String name;
 
-public Customer(String name){
+    public Customer(String name) {
 
-    this.name=name;
-}
+        this.name = name;
+    }
 
-    public Customer(){
+    public Customer() {
 
 
     }
-
 
 
 }

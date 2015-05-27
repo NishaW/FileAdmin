@@ -9,16 +9,13 @@ import java.util.ArrayList;
  */
 public class Asset extends Model {
 
-    public int assetId;
     public String assetName;
     public String extension;
     public ArrayList<String> selectedAssets;
 
- public Asset(String assetName) {
+    public Asset(String assetName) {
 
-     this.assetName= assetName;
-
-
+        this.assetName = assetName;
     }
 
     public Asset() {

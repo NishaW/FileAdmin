@@ -4,7 +4,7 @@
 		module="fileadmin_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20150514143105"
+		publication="20150527120816"
 	>
 		<description>
 		FileAdmin
@@ -27,9 +27,7 @@
 	</configurations>
 	<publications>
 		<artifact name="fileadmin_2.11" type="pom" ext="pom" conf="pom"/>
-		<artifact name="fileadmin_2.11" type="jar" ext="jar" conf="compile"/>
-		<artifact name="fileadmin_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		<artifact name="fileadmin_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+		<artifact name="fileadmin_2.11" type="jar" ext="jar" conf="optional" e:classifier="download"/>
 	</publications>
 	<dependencies>
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.1" conf="scala-tool->default,optional(default)"/>
@@ -43,7 +41,7 @@
 		<dependency org="com.typesafe.play" name="play-java-ebean_2.11" rev="2.3.6" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.3.6" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-ws_2.11" rev="2.3.6" conf="compile->default(compile)"/>
-		<dependency org="se.c2" name="core_web" rev="1.5-SNAPSHOT" conf="compile->default(compile)"/>
+		<dependency org="se.c2" name="core" rev="3.4-SNAPSHOT" conf="compile->default(compile)"/>
 		<dependency org="javax.mail" name="mail" rev="1.4.7" conf="compile->default(compile)"/>
 		<dependency org="com.zaxxer" name="HikariCP-java6" rev="2.3.5" conf="compile->default(compile)"/>
 	</dependencies>

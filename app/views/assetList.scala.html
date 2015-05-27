@@ -1,28 +1,30 @@
-@(assets: List[Asset],assetForm:Form[Asset])
-@import java.math.BigInteger; var i=0;
+@(assets: List[Asset], assetForm: Form[Asset])
+@import java.math.BigInteger; var i = 0;
 
 @main("Result page") {
     @helper.form(action = routes.FileApplication.generateThumbNails(), 'id -> "assestform") {
 
 
-    <table border=0 width=30% height=30% align=left cellpadding=1 cellspacing=1>
-        <thead>
-            <tr>
-                <th align="left" >Asset ID</th>
-            </tr>
-        </thead>
-        <tbody>
-        @for(asset <- assets) {
+        <table border=0 width=30% height=30% align=left cellpadding=1 cellspacing=1>
+            <thead>
+                <tr>
+                    <th align="left" >Asset ID</th>
+                </tr>
+            </thead>
+            <tbody>
+            @for(asset <- assets) {
 
-            <tr>
-                <td><input type="checkbox" name="selectedAssets[@i]" value="@asset.assetName"> @asset.assetName<br></td>
-            </tr>
+                <tr>
+                    <td><input type="checkbox" name="selectedAssets[@i]" value="@asset.assetName"> @asset.assetName <br></td>
+                </tr>
 
-            @{i += 1}
-        }
+                @{
+                    i += 1
+                }
+            }
 
-        </tbody>
-    </table>
+            </tbody>
+        </table>
         <input type="submit" class="btn btn-primary" value="Generate ThumbNails">
     }
 }

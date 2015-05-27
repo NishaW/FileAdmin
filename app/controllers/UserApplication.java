@@ -4,15 +4,10 @@ import models.FileAdminUser;
 import play.data.Form;
 import play.mvc.Controller;
 import play.mvc.Result;
-import se.c2.util.Environments;
-import se.c2.util.resources.RM;
 import views.html.index;
 import views.html.homepage;
 
-import java.sql.SQLException;
 import java.util.List;
-
-import se.c2.migration.AssetExport;
 
 
 /**
@@ -43,11 +38,11 @@ public class UserApplication extends Controller {
             switch (autName) {
 
                 case INVALID_PASSWORD: // Invalid password
-                    filledForm.reject("password", "Invalid Password");
+                    filledForm.reject("password", "Invalid username or password");
                     return badRequest(index.render(filledForm));
 
                 case INVALID_USERNAME: // Invalid username
-                    filledForm.reject("username", "Invalid username");
+                    filledForm.reject("username", "Invalid username or password");
                     return badRequest(index.render(filledForm));
 
                 case SUCCESS: // valid user

@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/Nisha/Documents/GitHub/FileAdmin/conf/routes
-// @HASH:4fbf41961eee660d61c5b11514b9f49a3fdeb2b5
-// @DATE:Sun May 17 21:08:35 CEST 2015
+// @HASH:e37410c4fb6776215896625cb0615a87f97368d7
+// @DATE:Sun May 24 20:18:15 CEST 2015
 
 
 import play.core._
@@ -54,17 +54,17 @@ HandlerDef(this.getClass.getClassLoader, "", "controllers.UserApplication", "log
         
 
 // @LINE:9
-private[this] lazy val controllers_CustomerApplication_getcust3_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home/getcust"))))
-private[this] lazy val controllers_CustomerApplication_getcust3_invoker = createInvoker(
-controllers.CustomerApplication.getcust(),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.CustomerApplication", "getcust", Nil,"GET", """""", Routes.prefix + """home/getcust"""))
+private[this] lazy val controllers_CustomerApplication_getCust3_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home/getCust"))))
+private[this] lazy val controllers_CustomerApplication_getCust3_invoker = createInvoker(
+controllers.CustomerApplication.getCust(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.CustomerApplication", "getCust", Nil,"GET", """""", Routes.prefix + """home/getCust"""))
         
 
 // @LINE:10
-private[this] lazy val controllers_FileApplication_getassetlist4_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home/asset"))))
-private[this] lazy val controllers_FileApplication_getassetlist4_invoker = createInvoker(
-controllers.FileApplication.getassetlist(),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getassetlist", Nil,"GET", """""", Routes.prefix + """home/asset"""))
+private[this] lazy val controllers_FileApplication_getAssetList4_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home/asset"))))
+private[this] lazy val controllers_FileApplication_getAssetList4_invoker = createInvoker(
+controllers.FileApplication.getAssetList(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getAssetList", Nil,"GET", """""", Routes.prefix + """home/asset"""))
         
 
 // @LINE:11
@@ -87,7 +87,7 @@ private[this] lazy val controllers_Assets_at7_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.UserApplication.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/getcust""","""controllers.CustomerApplication.getcust()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/asset""","""controllers.FileApplication.getassetlist()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/thumb""","""controllers.FileApplication.generateThumbNails()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.UserApplication.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.UserApplication.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/getCust""","""controllers.CustomerApplication.getCust()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/asset""","""controllers.FileApplication.getAssetList()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/thumb""","""controllers.FileApplication.generateThumbNails()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.UserApplication.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -120,17 +120,17 @@ case controllers_UserApplication_login2_route(params) => {
         
 
 // @LINE:9
-case controllers_CustomerApplication_getcust3_route(params) => {
+case controllers_CustomerApplication_getCust3_route(params) => {
    call { 
-        controllers_CustomerApplication_getcust3_invoker.call(controllers.CustomerApplication.getcust())
+        controllers_CustomerApplication_getCust3_invoker.call(controllers.CustomerApplication.getCust())
    }
 }
         
 
 // @LINE:10
-case controllers_FileApplication_getassetlist4_route(params) => {
+case controllers_FileApplication_getAssetList4_route(params) => {
    call { 
-        controllers_FileApplication_getassetlist4_invoker.call(controllers.FileApplication.getassetlist())
+        controllers_FileApplication_getAssetList4_invoker.call(controllers.FileApplication.getAssetList())
    }
 }
         

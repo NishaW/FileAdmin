@@ -11,24 +11,24 @@
         <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/signin.css")">
         <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/heading.css")">
         <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
-
+        <link rel="stylesheet" type="text/css" media="screen" href="@routes.Assets.at("stylesheets/imageGrid.css")">
 
     </head>
 
-        <body style="background-color:#eee">
-            <div class = "logout" >
-                <a href="@routes.UserApplication.logout()"><button class="btn btn-primary">Logout</button></a></div>
+    <body style="background-color : #eee">
+        <div class = "logout" >
+            <a href="@routes.UserApplication.logout()"><button class="btn btn-primary">Logout</button></a></div>
 
-            <img src="/assets/logo.png" />
-            <br>
-            <br>
-            <div class="menuBar">
-                <ul>
-                    <li style="width: 150px"><a href="@routes.UserApplication.login()">Home</a></li>
-                    <li style="width: 190px"><a href="getcust">Select Customer</a></li>
-                </ul>
-            </div>
-            <br>
+        <img src="/assets/logo.png" />
+        <br>
+        <br>
+        <div class="menuBar">
+            <ul>
+                <li style="width : 150px"><a href="@routes.UserApplication.login()">Home</a></li>
+                <li style="width : 190px"><a href="getCust">Select Customer</a></li>
+            </ul>
+        </div>
+        <br>
         @content
 
     </body>
