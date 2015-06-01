@@ -8,10 +8,7 @@ import play.mvc.Result;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 
 import scala.Console;
 import se.c2.business.asynchronicservices.task.UpdateAssets;
@@ -70,6 +67,7 @@ public class FileApplication extends Controller {
 
 
         ArrayList<String> orgFileNames = new ArrayList<String>(Arrays.asList(fOriginal.list()));
+        Collections.sort(orgFileNames, Collections.reverseOrder());
 
         try {
             for (String fn : orgFileNames) {
@@ -78,6 +76,7 @@ public class FileApplication extends Controller {
                     originalAssetList.add(fn.substring(2, fn.indexOf(".")));
                 }
             }
+
         } catch (StringIndexOutOfBoundsException e) {
             e.printStackTrace();
         }
@@ -93,12 +92,14 @@ public class FileApplication extends Controller {
         } catch (StringIndexOutOfBoundsException e) {
             e.printStackTrace();
         }
+
         boolean haveMatch = originalAssetList.removeAll(thumbAssetList);
 
         List<Asset> assetListWithoutThumb = new ArrayList<Asset>();
 
         try {
             for (String fn : orgFileNames) {
+                Console.println(fn);
                 if (fn.contains(".")) {
                     if (originalAssetList.contains(fn.substring(2, fn.indexOf(".")))) {
                         assetListWithoutThumb.add(new Asset(fn));
@@ -109,6 +110,7 @@ public class FileApplication extends Controller {
         } catch (StringIndexOutOfBoundsException e) {
             e.printStackTrace();
         }
+        //Collections.sort(assetListWithoutThumb, Collections.reverseOrder());
 
         return assetListWithoutThumb;
 
@@ -131,6 +133,7 @@ public class FileApplication extends Controller {
 
         String assetList = "";
         try {
+
             for (String s : selected.selectedAssets) {
                 if (s != null) {
                     assetList = assetList + s.substring(2, s.indexOf(".")) + ",";
