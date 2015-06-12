@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/Nisha/Documents/GitHub/FileAdmin/conf/routes
-// @HASH:e37410c4fb6776215896625cb0615a87f97368d7
-// @DATE:Sun May 24 20:18:15 CEST 2015
+// @HASH:eec66952393e9a50c4275041f2b1671a95406b64
+// @DATE:Wed Jun 10 21:37:38 CEST 2015
 
 
 import play.core._
@@ -61,33 +61,40 @@ HandlerDef(this.getClass.getClassLoader, "", "controllers.CustomerApplication", 
         
 
 // @LINE:10
-private[this] lazy val controllers_FileApplication_getAssetList4_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home/asset"))))
+private[this] lazy val controllers_FileApplication_getAssetList4_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home/asset/"),DynamicPart("page", """[^/]+""",true))))
 private[this] lazy val controllers_FileApplication_getAssetList4_invoker = createInvoker(
-controllers.FileApplication.getAssetList(),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getAssetList", Nil,"GET", """""", Routes.prefix + """home/asset"""))
+controllers.FileApplication.getAssetList(fakeValue[Integer]),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getAssetList", Seq(classOf[Integer]),"GET", """""", Routes.prefix + """home/asset/$page<[^/]+>"""))
         
 
 // @LINE:11
-private[this] lazy val controllers_FileApplication_generateThumbNails5_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home/thumb"))))
-private[this] lazy val controllers_FileApplication_generateThumbNails5_invoker = createInvoker(
+private[this] lazy val controllers_FileApplication_getFirstAssestList5_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home/firstasset"))))
+private[this] lazy val controllers_FileApplication_getFirstAssestList5_invoker = createInvoker(
+controllers.FileApplication.getFirstAssestList(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getFirstAssestList", Nil,"GET", """""", Routes.prefix + """home/firstasset"""))
+        
+
+// @LINE:12
+private[this] lazy val controllers_FileApplication_generateThumbNails6_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home/thumb"))))
+private[this] lazy val controllers_FileApplication_generateThumbNails6_invoker = createInvoker(
 controllers.FileApplication.generateThumbNails(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "generateThumbNails", Nil,"GET", """""", Routes.prefix + """home/thumb"""))
         
 
-// @LINE:12
-private[this] lazy val controllers_UserApplication_logout6_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("logout"))))
-private[this] lazy val controllers_UserApplication_logout6_invoker = createInvoker(
+// @LINE:13
+private[this] lazy val controllers_UserApplication_logout7_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("logout"))))
+private[this] lazy val controllers_UserApplication_logout7_invoker = createInvoker(
 controllers.UserApplication.logout(),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.UserApplication", "logout", Nil,"GET", """""", Routes.prefix + """logout"""))
         
 
-// @LINE:17
-private[this] lazy val controllers_Assets_at7_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
-private[this] lazy val controllers_Assets_at7_invoker = createInvoker(
+// @LINE:19
+private[this] lazy val controllers_Assets_at8_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("assets/"),DynamicPart("file", """.+""",false))))
+private[this] lazy val controllers_Assets_at8_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.UserApplication.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/getCust""","""controllers.CustomerApplication.getCust()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/asset""","""controllers.FileApplication.getAssetList()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/thumb""","""controllers.FileApplication.generateThumbNails()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.UserApplication.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.UserApplication.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/getCust""","""controllers.CustomerApplication.getCust()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/asset/$page<[^/]+>""","""controllers.FileApplication.getAssetList(page:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/firstasset""","""controllers.FileApplication.getFirstAssestList()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/thumb""","""controllers.FileApplication.generateThumbNails()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.UserApplication.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -129,32 +136,40 @@ case controllers_CustomerApplication_getCust3_route(params) => {
 
 // @LINE:10
 case controllers_FileApplication_getAssetList4_route(params) => {
-   call { 
-        controllers_FileApplication_getAssetList4_invoker.call(controllers.FileApplication.getAssetList())
+   call(params.fromPath[Integer]("page", None)) { (page) =>
+        controllers_FileApplication_getAssetList4_invoker.call(controllers.FileApplication.getAssetList(page))
    }
 }
         
 
 // @LINE:11
-case controllers_FileApplication_generateThumbNails5_route(params) => {
+case controllers_FileApplication_getFirstAssestList5_route(params) => {
    call { 
-        controllers_FileApplication_generateThumbNails5_invoker.call(controllers.FileApplication.generateThumbNails())
+        controllers_FileApplication_getFirstAssestList5_invoker.call(controllers.FileApplication.getFirstAssestList())
    }
 }
         
 
 // @LINE:12
-case controllers_UserApplication_logout6_route(params) => {
+case controllers_FileApplication_generateThumbNails6_route(params) => {
    call { 
-        controllers_UserApplication_logout6_invoker.call(controllers.UserApplication.logout())
+        controllers_FileApplication_generateThumbNails6_invoker.call(controllers.FileApplication.generateThumbNails())
    }
 }
         
 
-// @LINE:17
-case controllers_Assets_at7_route(params) => {
+// @LINE:13
+case controllers_UserApplication_logout7_route(params) => {
+   call { 
+        controllers_UserApplication_logout7_invoker.call(controllers.UserApplication.logout())
+   }
+}
+        
+
+// @LINE:19
+case controllers_Assets_at8_route(params) => {
    call(Param[String]("path", Right("/public")), params.fromPath[String]("file", None)) { (path, file) =>
-        controllers_Assets_at7_invoker.call(controllers.Assets.at(path, file))
+        controllers_Assets_at8_invoker.call(controllers.Assets.at(path, file))
    }
 }
         

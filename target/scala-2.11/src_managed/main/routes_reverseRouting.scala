@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/Nisha/Documents/GitHub/FileAdmin/conf/routes
-// @HASH:e37410c4fb6776215896625cb0615a87f97368d7
-// @DATE:Sun May 24 20:18:15 CEST 2015
+// @HASH:eec66952393e9a50c4275041f2b1671a95406b64
+// @DATE:Wed Jun 10 21:37:38 CEST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -15,7 +15,8 @@ import _root_.play.libs.F
 import Router.queryString
 
 
-// @LINE:17
+// @LINE:19
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -25,19 +26,27 @@ import Router.queryString
 // @LINE:6
 package controllers {
 
+// @LINE:12
 // @LINE:11
 // @LINE:10
 class ReverseFileApplication {
 
 
 // @LINE:10
-def getAssetList(): Call = {
+def getAssetList(page:Integer): Call = {
    import ReverseRouteContext.empty
-   Call("GET", _prefix + { _defaultPrefix } + "home/asset")
+   Call("GET", _prefix + { _defaultPrefix } + "home/asset/" + implicitly[PathBindable[Integer]].unbind("page", page))
 }
                         
 
 // @LINE:11
+def getFirstAssestList(): Call = {
+   import ReverseRouteContext.empty
+   Call("GET", _prefix + { _defaultPrefix } + "home/firstasset")
+}
+                        
+
+// @LINE:12
 def generateThumbNails(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "home/thumb")
@@ -61,11 +70,11 @@ def getCust(): Call = {
 }
                           
 
-// @LINE:17
+// @LINE:19
 class ReverseAssets {
 
 
-// @LINE:17
+// @LINE:19
 def at(file:String): Call = {
    implicit val _rrc = new ReverseRouteContext(Map(("path", "/public")))
    Call("GET", _prefix + { _defaultPrefix } + "assets/" + implicitly[PathBindable[String]].unbind("file", file))
@@ -75,14 +84,14 @@ def at(file:String): Call = {
 }
                           
 
-// @LINE:12
+// @LINE:13
 // @LINE:8
 // @LINE:7
 // @LINE:6
 class ReverseUserApplication {
 
 
-// @LINE:12
+// @LINE:13
 def logout(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "logout")
@@ -115,7 +124,8 @@ case ()  =>
                   
 
 
-// @LINE:17
+// @LINE:19
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -126,6 +136,7 @@ case ()  =>
 package controllers.javascript {
 import ReverseRouteContext.empty
 
+// @LINE:12
 // @LINE:11
 // @LINE:10
 class ReverseFileApplication {
@@ -135,14 +146,25 @@ class ReverseFileApplication {
 def getAssetList : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.FileApplication.getAssetList",
    """
-      function() {
-      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "home/asset"})
+      function(page) {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "home/asset/" + (""" + implicitly[PathBindable[Integer]].javascriptUnbind + """)("page", page)})
       }
    """
 )
                         
 
 // @LINE:11
+def getFirstAssestList : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FileApplication.getFirstAssestList",
+   """
+      function() {
+      return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "home/firstasset"})
+      }
+   """
+)
+                        
+
+// @LINE:12
 def generateThumbNails : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.FileApplication.generateThumbNails",
    """
@@ -174,11 +196,11 @@ def getCust : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:17
+// @LINE:19
 class ReverseAssets {
 
 
-// @LINE:17
+// @LINE:19
 def at : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.Assets.at",
    """
@@ -192,14 +214,14 @@ def at : JavascriptReverseRoute = JavascriptReverseRoute(
 }
               
 
-// @LINE:12
+// @LINE:13
 // @LINE:8
 // @LINE:7
 // @LINE:6
 class ReverseUserApplication {
 
 
-// @LINE:12
+// @LINE:13
 def logout : JavascriptReverseRoute = JavascriptReverseRoute(
    "controllers.UserApplication.logout",
    """
@@ -244,7 +266,8 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
         
 
 
-// @LINE:17
+// @LINE:19
+// @LINE:13
 // @LINE:12
 // @LINE:11
 // @LINE:10
@@ -255,18 +278,25 @@ def login : JavascriptReverseRoute = JavascriptReverseRoute(
 package controllers.ref {
 
 
+// @LINE:12
 // @LINE:11
 // @LINE:10
 class ReverseFileApplication {
 
 
 // @LINE:10
-def getAssetList(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.FileApplication.getAssetList(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getAssetList", Seq(), "GET", """""", _prefix + """home/asset""")
+def getAssetList(page:Integer): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FileApplication.getAssetList(page), HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getAssetList", Seq(classOf[Integer]), "GET", """""", _prefix + """home/asset/$page<[^/]+>""")
 )
                       
 
 // @LINE:11
+def getFirstAssestList(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FileApplication.getFirstAssestList(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getFirstAssestList", Seq(), "GET", """""", _prefix + """home/firstasset""")
+)
+                      
+
+// @LINE:12
 def generateThumbNails(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.FileApplication.generateThumbNails(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "generateThumbNails", Seq(), "GET", """""", _prefix + """home/thumb""")
 )
@@ -288,11 +318,11 @@ def getCust(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
 }
                           
 
-// @LINE:17
+// @LINE:19
 class ReverseAssets {
 
 
-// @LINE:17
+// @LINE:19
 def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.Assets.at(path, file), HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]), "GET", """ Map static resources from the /public folder to the /assets URL path""", _prefix + """assets/$file<.+>""")
 )
@@ -301,14 +331,14 @@ def at(path:String, file:String): play.api.mvc.HandlerRef[_] = new play.api.mvc.
 }
                           
 
-// @LINE:12
+// @LINE:13
 // @LINE:8
 // @LINE:7
 // @LINE:6
 class ReverseUserApplication {
 
 
-// @LINE:12
+// @LINE:13
 def logout(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
    controllers.UserApplication.logout(), HandlerDef(this.getClass.getClassLoader, "", "controllers.UserApplication", "logout", Seq(), "GET", """""", _prefix + """logout""")
 )

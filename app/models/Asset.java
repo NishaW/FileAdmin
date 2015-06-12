@@ -15,6 +15,8 @@ public class Asset extends Model {
     public String extension;
     public ArrayList<String> selectedAssets;
 
+    public static Model.Finder<Long, Asset> FIND =
+            new Model.Finder<Long, Asset>(Long.class, Asset.class);
     public Asset(String assetName) {
 
         this.assetName = assetName;

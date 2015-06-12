@@ -4,7 +4,7 @@
 		module="fileadmin_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20150527135223"
+		publication="20150610211419"
 	>
 		<description>
 		FileAdmin
@@ -43,7 +43,7 @@
 		<dependency org="com.typesafe.play" name="play-java-ebean_2.11" rev="2.3.6" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.3.6" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.play" name="play-java-ws_2.11" rev="2.3.6" conf="compile->default(compile)"/>
-		<dependency org="se.c2" name="core" rev="3.4-SNAPSHOT" conf="compile->default(compile)"/>
+		<dependency org="se.c2" name="core" rev="3.6-SNAPSHOT" conf="compile->default(compile)"/>
 		<dependency org="javax.mail" name="mail" rev="1.4.7" conf="compile->default(compile)"/>
 		<dependency org="com.zaxxer" name="HikariCP-java6" rev="2.3.5" conf="compile->default(compile)"/>
 	</dependencies>

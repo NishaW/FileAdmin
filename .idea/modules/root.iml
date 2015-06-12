@@ -228,14 +228,14 @@
     <orderEntry type="library" name="SBT: se.c2:photoshop:unversioned" level="project" />
     <orderEntry type="library" name="SBT: velocity:velocity:1.5" level="project" />
     <orderEntry type="library" name="SBT: xuggle:xuggle-xuggler:5.4" level="project" />
-    <orderEntry type="library" name="SBT: se.c2:core:3.4-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="SBT: se.c2:core:3.6-SNAPSHOT" level="project" />
     <orderEntry type="module-library">
       <library name="SBT: unmanaged-jars">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../lib/core_web-1.5-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/core-3.6-SNAPSHOT.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../lib/core_web-1.7-SNAPSHOT.jar!/" />
           <root url="jar://$MODULE_DIR$/../../lib/HikariCP-java6-2.3.5.jar!/" />
           <root url="jar://$MODULE_DIR$/../../lib/sqljdbc4.jar!/" />
-          <root url="jar://$MODULE_DIR$/../../lib/core-3.4-SNAPSHOT.jar!/" />
           <root url="jar://$MODULE_DIR$/../../lib/play-java-jdbc_2.11.jar!/" />
         </CLASSES>
         <JAVADOC />

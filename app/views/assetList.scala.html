@@ -1,4 +1,4 @@
-@(assets: List[Asset], assetForm: Form[Asset])
+@(assets: List[Asset], numberOfPages: Integer, assetForm: Form[Asset])
 @import java.math.BigInteger; var i = 0;
 
 @main("Result page") {
@@ -7,6 +7,8 @@
 
         <table border=0 width=30% height=30% align=left cellpadding=1 cellspacing=1>
             <thead>
+                <tr>
+
                 <tr>
                     <th align="left" >Asset ID</th>
                 </tr>
@@ -25,6 +27,19 @@
 
             </tbody>
         </table>
+        <table border=0 width=30% height=30% align=left cellpadding=1 cellspacing=1>
+            <thead>
+                <tr>
+                    @{var j = 1;}
+                    @for(j <- 1 to numberOfPages) {
+                        <td><a href="@routes.FileApplication.getAssetList(j)">&nbsp;@j</a></td>
+                    }
+                    <td>pages</td>
+                </tr>
+        </table>
+        <br>
+        <br>
+        <br>
         <input type="submit" class="btn btn-primary" value="Generate ThumbNails">
     }
 }
