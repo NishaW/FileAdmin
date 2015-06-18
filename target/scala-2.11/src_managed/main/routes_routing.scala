@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/Nisha/Documents/GitHub/FileAdmin/conf/routes
-// @HASH:eec66952393e9a50c4275041f2b1671a95406b64
-// @DATE:Wed Jun 10 21:37:38 CEST 2015
+// @HASH:5f335e27a7e13a151364436e64a1b5c886292ab9
+// @DATE:Fri Jun 12 12:27:56 CEST 2015
 
 
 import play.core._
@@ -68,10 +68,10 @@ HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "get
         
 
 // @LINE:11
-private[this] lazy val controllers_FileApplication_getFirstAssestList5_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home/firstasset"))))
-private[this] lazy val controllers_FileApplication_getFirstAssestList5_invoker = createInvoker(
-controllers.FileApplication.getFirstAssestList(),
-HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getFirstAssestList", Nil,"GET", """""", Routes.prefix + """home/firstasset"""))
+private[this] lazy val controllers_FileApplication_getFirstAssetList5_route = Route("GET", PathPattern(List(StaticPart(Routes.prefix),StaticPart(Routes.defaultPrefix),StaticPart("home/firstasset"))))
+private[this] lazy val controllers_FileApplication_getFirstAssetList5_invoker = createInvoker(
+controllers.FileApplication.getFirstAssetList(),
+HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getFirstAssetList", Nil,"GET", """""", Routes.prefix + """home/firstasset"""))
         
 
 // @LINE:12
@@ -94,7 +94,7 @@ private[this] lazy val controllers_Assets_at8_invoker = createInvoker(
 controllers.Assets.at(fakeValue[String], fakeValue[String]),
 HandlerDef(this.getClass.getClassLoader, "", "controllers.Assets", "at", Seq(classOf[String], classOf[String]),"GET", """ Map static resources from the /public folder to the /assets URL path""", Routes.prefix + """assets/$file<.+>"""))
         
-def documentation = List(("""GET""", prefix,"""controllers.UserApplication.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/getCust""","""controllers.CustomerApplication.getCust()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/asset/$page<[^/]+>""","""controllers.FileApplication.getAssetList(page:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/firstasset""","""controllers.FileApplication.getFirstAssestList()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/thumb""","""controllers.FileApplication.generateThumbNails()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.UserApplication.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
+def documentation = List(("""GET""", prefix,"""controllers.UserApplication.index()"""),("""POST""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/""","""controllers.UserApplication.login()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/getCust""","""controllers.CustomerApplication.getCust()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/asset/$page<[^/]+>""","""controllers.FileApplication.getAssetList(page:Integer)"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/firstasset""","""controllers.FileApplication.getFirstAssetList()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """home/thumb""","""controllers.FileApplication.generateThumbNails()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """logout""","""controllers.UserApplication.logout()"""),("""GET""", prefix + (if(prefix.endsWith("/")) "" else "/") + """assets/$file<.+>""","""controllers.Assets.at(path:String = "/public", file:String)""")).foldLeft(List.empty[(String,String,String)]) { (s,e) => e.asInstanceOf[Any] match {
   case r @ (_,_,_) => s :+ r.asInstanceOf[(String,String,String)]
   case l => s ++ l.asInstanceOf[List[(String,String,String)]]
 }}
@@ -143,9 +143,9 @@ case controllers_FileApplication_getAssetList4_route(params) => {
         
 
 // @LINE:11
-case controllers_FileApplication_getFirstAssestList5_route(params) => {
+case controllers_FileApplication_getFirstAssetList5_route(params) => {
    call { 
-        controllers_FileApplication_getFirstAssestList5_invoker.call(controllers.FileApplication.getFirstAssestList())
+        controllers_FileApplication_getFirstAssetList5_invoker.call(controllers.FileApplication.getFirstAssetList())
    }
 }
         

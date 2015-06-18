@@ -35,40 +35,39 @@ Seq[Any](format.raw/*1.71*/("""
         """),format.raw/*8.9*/("""<table border=0 width=30% height=30% align=left cellpadding=1 cellspacing=1>
             <thead>
                 <tr>
-
                 <tr>
                     <th align="left" >Asset ID</th>
                 </tr>
             </thead>
             <tbody>
-            """),_display_(/*17.14*/for(asset <- assets) yield /*17.34*/ {_display_(Seq[Any](format.raw/*17.36*/("""
+            """),_display_(/*16.14*/for(asset <- assets) yield /*16.34*/ {_display_(Seq[Any](format.raw/*16.36*/("""
 
-                """),format.raw/*19.17*/("""<tr>
-                    <td><input type="checkbox" name="selectedAssets["""),_display_(/*20.70*/i),format.raw/*20.71*/("""]" value=""""),_display_(/*20.82*/asset/*20.87*/.assetName),format.raw/*20.97*/(""""> """),_display_(/*20.101*/asset/*20.106*/.assetName),format.raw/*20.116*/(""" """),format.raw/*20.117*/("""<br></td>
+                """),format.raw/*18.17*/("""<tr>
+                    <td><input type="checkbox" name="selectedAssets["""),_display_(/*19.70*/i),format.raw/*19.71*/("""]" value=""""),_display_(/*19.82*/asset/*19.87*/.assetName),format.raw/*19.97*/(""""> """),_display_(/*19.101*/asset/*19.106*/.assetName),format.raw/*19.116*/(""" """),format.raw/*19.117*/("""<br></td>
                 </tr>
 
-                """),_display_(/*23.18*/{
+                """),_display_(/*22.18*/{
                     i += 1
-                }),format.raw/*25.18*/("""
-            """)))}),format.raw/*26.14*/("""
+                }),format.raw/*24.18*/("""
+            """)))}),format.raw/*25.14*/("""
 
-            """),format.raw/*28.13*/("""</tbody>
+            """),format.raw/*27.13*/("""</tbody>
         </table>
         <table border=0 width=30% height=30% align=left cellpadding=1 cellspacing=1>
             <thead>
                 <tr>
-                    """),_display_(/*33.22*/{var j = 1;}),format.raw/*33.34*/("""
-                    """),_display_(/*34.22*/for(j <- 1 to numberOfPages) yield /*34.50*/ {_display_(Seq[Any](format.raw/*34.52*/("""
-                        """),format.raw/*35.25*/("""<td><a href=""""),_display_(/*35.39*/routes/*35.45*/.FileApplication.getAssetList(j)),format.raw/*35.77*/("""">&nbsp;"""),_display_(/*35.86*/j),format.raw/*35.87*/("""</a></td>
-                    """)))}),format.raw/*36.22*/("""
-                    """),format.raw/*37.21*/("""<td>pages</td>
+                    """),_display_(/*32.22*/{var j = 1;}),format.raw/*32.34*/("""
+                    """),_display_(/*33.22*/for(j <- 1 to numberOfPages) yield /*33.50*/ {_display_(Seq[Any](format.raw/*33.52*/("""
+                        """),format.raw/*34.25*/("""<td><a href=""""),_display_(/*34.39*/routes/*34.45*/.FileApplication.getAssetList(j)),format.raw/*34.77*/("""">&nbsp;"""),_display_(/*34.86*/j),format.raw/*34.87*/("""</a></td>
+                    """)))}),format.raw/*35.22*/("""
+                    """),format.raw/*36.21*/("""<td>&nbsp;pages</td>
                 </tr>
         </table>
         <br>
         <br>
         <br>
         <input type="submit" class="btn btn-primary" value="Generate ThumbNails">
-    """)))}),format.raw/*44.6*/("""
+    """)))}),format.raw/*43.6*/("""
 """)))}))}
   }
 
@@ -81,11 +80,11 @@ Seq[Any](format.raw/*1.71*/("""
 }
               /*
                   -- GENERATED --
-                  DATE: Wed Jun 10 22:21:17 CEST 2015
+                  DATE: Thu Jun 18 10:29:01 CEST 2015
                   SOURCE: C:/Users/Nisha/Documents/GitHub/FileAdmin/app/views/assetList.scala.html
-                  HASH: d9355d31a88312043ba8fa59b0357d2ac2952445
-                  MATRIX: 752->1|948->70|976->114|1004->117|1031->136|1070->138|1102->145|1116->151|1204->231|1243->233|1283->247|1587->524|1623->544|1663->546|1711->566|1813->641|1835->642|1873->653|1887->658|1918->668|1950->672|1965->677|1997->687|2027->688|2107->741|2176->789|2222->804|2266->820|2471->998|2504->1010|2554->1033|2598->1061|2638->1063|2692->1089|2733->1103|2748->1109|2801->1141|2837->1150|2859->1151|2922->1183|2972->1205|3189->1392
-                  LINES: 26->1|29->1|30->3|31->4|31->4|31->4|32->5|32->5|32->5|32->5|35->8|44->17|44->17|44->17|46->19|47->20|47->20|47->20|47->20|47->20|47->20|47->20|47->20|47->20|50->23|52->25|53->26|55->28|60->33|60->33|61->34|61->34|61->34|62->35|62->35|62->35|62->35|62->35|62->35|63->36|64->37|71->44
+                  HASH: 09d09bc98d09638703cb9cfce8932c8798c94dab
+                  MATRIX: 752->1|948->70|976->114|1004->117|1031->136|1070->138|1102->145|1116->151|1204->231|1243->233|1283->247|1585->522|1621->542|1661->544|1709->564|1811->639|1833->640|1871->651|1885->656|1916->666|1948->670|1963->675|1995->685|2025->686|2105->739|2174->787|2220->802|2264->818|2469->996|2502->1008|2552->1031|2596->1059|2636->1061|2690->1087|2731->1101|2746->1107|2799->1139|2835->1148|2857->1149|2920->1181|2970->1203|3193->1396
+                  LINES: 26->1|29->1|30->3|31->4|31->4|31->4|32->5|32->5|32->5|32->5|35->8|43->16|43->16|43->16|45->18|46->19|46->19|46->19|46->19|46->19|46->19|46->19|46->19|46->19|49->22|51->24|52->25|54->27|59->32|59->32|60->33|60->33|60->33|61->34|61->34|61->34|61->34|61->34|61->34|62->35|63->36|70->43
                   -- GENERATED --
               */
           

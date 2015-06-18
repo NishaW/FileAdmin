@@ -1,0 +1,20 @@
+
+* Login
+    username = Admin
+    password = fileadmin
+
+* Changing login information
+    database - c2-db01/bong_ap
+    tabel    - file_admin_user
+    * database connection information can be found in "application.conf"
+
+* Dependency changes
+    change the library dependencies in "build.sbt" file (update the core version according to the version of core)
+    update the jar files for both core and core_web in "lib" folder.(This should be done after any changes in media bank. Rebuild
+     and copy the new jar file).
+    change the resolvers in "build.sbt" (file path to .m2/repository)
+
+* Environments / File Paths
+    changes to Environments and file paths can be done in "filepaths.properties"
+
+* Make sure that you have connected to "storage and webapps" according to the particular Environment.

@@ -30,7 +30,7 @@ public class FileApplication extends Controller {
     final static Form<Customer> custForm = Form.form(Customer.class);
     final static Form<Asset> assetForm = Form.form(Asset.class);
     private static int numberOfPages = 0;
-    private static int currentpage = 1;
+    private static int currentPage = 1;
 
 
     public static Properties loadProperties() {
@@ -47,7 +47,6 @@ public class FileApplication extends Controller {
 
     public static String[] getFilePaths(String client) {
         // Retrieve and return paths according to selected client(Customer)
-        session().get("clientname");
         if (properties.containsKey(client)) {
             String[] filePaths = properties.getProperty(client).split(",");
             return filePaths;
@@ -70,7 +69,6 @@ public class FileApplication extends Controller {
 
         ArrayList<String> orgFileNames = new ArrayList<String>(Arrays.asList(fOriginal.list()));
         Collections.sort(orgFileNames, Collections.reverseOrder());
-        //ArrayUtils.subarray(orgFileNames,1,20)
 
         try {
             for (String fn : orgFileNames) {
@@ -96,16 +94,23 @@ public class FileApplication extends Controller {
         }
 
         boolean haveMatch = originalAssetList.removeAll(thumbAssetList);
+        // Split the list into 100 of each according to size
+        numberOfPages = (int)Math.ceil((originalAssetList.size()) / 100.0);
+        int fromItem = ((currentPage - 1) * 100);
 
-        numberOfPages = (originalAssetList.size()) / 100;
-        int fromitem = ((currentpage - 1) * 100);
-        int toitem = (currentpage * 100);
-        List<String> splitlist = originalAssetList.subList(fromitem, toitem);
+        int toItem;
+        if (currentPage*100 > originalAssetList.size() ){
+            toItem = originalAssetList.size()-1;
+        }else {
+            toItem = (currentPage * 100);
+        }
+
+        List<String> splitList = originalAssetList.subList(fromItem, toItem);
         List<Asset> assetListWithoutThumb = new ArrayList<Asset>();
         try {
             for (String fn : orgFileNames) {
                 if (fn.contains(".")) {
-                    if (splitlist.contains(fn.substring(2, fn.indexOf(".")))) {
+                    if (splitList.contains(fn.substring(2, fn.indexOf(".")))) {
                         assetListWithoutThumb.add(new Asset(fn));
                     }
                 }
@@ -118,10 +123,9 @@ public class FileApplication extends Controller {
 
     }
 
-    public static Result getFirstAssestList() {
+    public static Result getFirstAssetList() {
 
         Form<Customer> filledForm = custForm.bindFromRequest();
-
         Customer selected = filledForm.get();
         session("clientname", selected.name);
 
@@ -130,9 +134,7 @@ public class FileApplication extends Controller {
 
     public static Result getAssetList(int page) {
         // Retrieve selected assets
-        currentpage = page;
-
-
+        currentPage = page;
         return ok(views.html.assetList.render(getMissingThumbFiles(session().get("clientname")), numberOfPages, assetForm));
 
     }

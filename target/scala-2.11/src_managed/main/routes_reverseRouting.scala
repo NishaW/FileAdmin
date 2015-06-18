@@ -1,6 +1,6 @@
 // @SOURCE:C:/Users/Nisha/Documents/GitHub/FileAdmin/conf/routes
-// @HASH:eec66952393e9a50c4275041f2b1671a95406b64
-// @DATE:Wed Jun 10 21:37:38 CEST 2015
+// @HASH:5f335e27a7e13a151364436e64a1b5c886292ab9
+// @DATE:Fri Jun 12 12:27:56 CEST 2015
 
 import Routes.{prefix => _prefix, defaultPrefix => _defaultPrefix}
 import play.core._
@@ -40,7 +40,7 @@ def getAssetList(page:Integer): Call = {
                         
 
 // @LINE:11
-def getFirstAssestList(): Call = {
+def getFirstAssetList(): Call = {
    import ReverseRouteContext.empty
    Call("GET", _prefix + { _defaultPrefix } + "home/firstasset")
 }
@@ -154,8 +154,8 @@ def getAssetList : JavascriptReverseRoute = JavascriptReverseRoute(
                         
 
 // @LINE:11
-def getFirstAssestList : JavascriptReverseRoute = JavascriptReverseRoute(
-   "controllers.FileApplication.getFirstAssestList",
+def getFirstAssetList : JavascriptReverseRoute = JavascriptReverseRoute(
+   "controllers.FileApplication.getFirstAssetList",
    """
       function() {
       return _wA({method:"GET", url:"""" + _prefix + { _defaultPrefix } + """" + "home/firstasset"})
@@ -291,8 +291,8 @@ def getAssetList(page:Integer): play.api.mvc.HandlerRef[_] = new play.api.mvc.Ha
                       
 
 // @LINE:11
-def getFirstAssestList(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
-   controllers.FileApplication.getFirstAssestList(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getFirstAssestList", Seq(), "GET", """""", _prefix + """home/firstasset""")
+def getFirstAssetList(): play.api.mvc.HandlerRef[_] = new play.api.mvc.HandlerRef(
+   controllers.FileApplication.getFirstAssetList(), HandlerDef(this.getClass.getClassLoader, "", "controllers.FileApplication", "getFirstAssetList", Seq(), "GET", """""", _prefix + """home/firstasset""")
 )
                       
 

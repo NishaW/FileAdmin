@@ -2,7 +2,7 @@
 
 
 @main("Customer page") {
-    @helper.form(action = routes.FileApplication.getFirstAssestList, 'id -> "customerselectform") {
+    @helper.form(action = routes.FileApplication.getFirstAssetList, 'id -> "customerselectform") {
 
         <select name="name">
         @for(customers <- customers) {

@@ -8,7 +8,7 @@ POST        /home/                   controllers.UserApplication.login()
 GET         /home/                   controllers.UserApplication.login()
 GET         /home/getCust            controllers.CustomerApplication.getCust()
 GET         /home/asset/:page        controllers.FileApplication.getAssetList(page:Integer)
-GET         /home/firstasset         controllers.FileApplication.getFirstAssestList()
+GET         /home/firstasset         controllers.FileApplication.getFirstAssetList()
 GET         /home/thumb              controllers.FileApplication.generateThumbNails()
 GET         /logout                  controllers.UserApplication.logout()
 
